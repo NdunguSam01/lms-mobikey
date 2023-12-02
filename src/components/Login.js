@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 const Login = () => 
 {
     return ( 
@@ -9,6 +10,7 @@ const Login = () =>
                 <label htmlFor="password">Password</label>
                 <input type="password" name="password" placeholder="Enter your password"  required/> 
                 <input type="submit" class="btn btn-success" value="Login"/>
+                <NavLink to="/">Back</NavLink>
             </form>
         </>
      );
