@@ -3,7 +3,7 @@ const Login = () =>
 {
     return ( 
         <>
-            <h1>Leave Request Form</h1>
+            <h1>Login Form</h1>
             <form >
                 <label htmlFor="username">Username</label>
                 <input type="text" name="username" placeholder="Enter your username" required/>
