@@ -1,4 +1,5 @@
 import { NavLink  } from 'react-router-dom';
+import '../assets/css/Landing Page.css'
 
 const LandingPage = () => 
 {
