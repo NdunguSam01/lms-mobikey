@@ -7,10 +7,9 @@ nav a
 {
     background: linear-gradient(rgba(0, 0, 0, 0.377), rgba(0, 0, 0, 0.062));
     padding: 20px 30px;
-    font-size: 1.3em;
+    font-size: 1.2em;
     text-decoration: none;
     text-align: center;
-    border: 1px;
     color: white;
 }
 nav a:hover
