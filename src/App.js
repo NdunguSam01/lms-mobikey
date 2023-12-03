@@ -4,6 +4,7 @@ import LandingPage from './components/Landing Page';
 import Login from './components/Login';
 import PageNotFound from './components/PageNotFound';
 import LeaveForm from './components/Leave Form';
+import Navbar from './components/Navbar';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Route path='/' element={<LandingPage/>}></Route>
         <Route path='/login' element={<Login/>}></Route>
         <Route path='/leave' element={<LeaveForm/>}></Route>
+        <Route path='/navbar' element={<Navbar/>}></Route>
         <Route path='*' element={<PageNotFound/>}></Route>
       </Routes>
     </>
