@@ -9,11 +9,11 @@ const Login = () =>
                     <h1 className="my-3">Login Form</h1>
                     <div className="col-md-12">
                         <label htmlFor="username" className="form-label">Username</label>
-                        <input type="email" className="form-control mt-3" id="username" placeholder="Enter your username"/>
+                        <input type="email" className="form-control mt-3" id="username" placeholder="Enter your username" required/>
                     </div>
                     <div className="col-md-12">
                         <label htmlFor="password" className="form-label">Password</label>
-                        <input type="password" className="form-control mt-3" id="password" placeholder="Enter your password"/>
+                        <input type="password" className="form-control mt-3" id="password" placeholder="Enter your password" required/>
                     </div>
                     <div classNameName="container buttons">
                         <button type="submit" className="btn btn-success text-center col-12 my-3">Login</button>
