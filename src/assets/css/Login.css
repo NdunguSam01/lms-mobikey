@@ -1,6 +1,12 @@
 form
 {
-    border: 1px solid red;
-    display: flex;
-    flex-direction: column;
+    width: 450px;
+    margin: 15vh 5vh;
+    background-color: white;
+}
+form h1
+{
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
 }
