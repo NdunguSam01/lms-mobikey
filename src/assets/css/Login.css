@@ -10,3 +10,11 @@ form h1
     font-weight: bold;
     text-align: center;
 }
+@media (max-width: 409px) 
+{
+    div.buttons
+    {
+        flex-direction: column;
+        width: 100%;
+    }   
+}
