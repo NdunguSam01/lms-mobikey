@@ -7,6 +7,7 @@ const LandingPage = () =>
         <>
             <nav>
                 <NavLink to="/login">Login</NavLink>
+                <NavLink to="/leave">Leave Form</NavLink>
             </nav>
         </>
 
