@@ -1,7 +1,6 @@
 form
 {
-    width: 450px;
-    margin: 15vh 5vh;
+    width: 400px;
     background-color: white;
 }
 form h1
@@ -10,11 +9,11 @@ form h1
     font-weight: bold;
     text-align: center;
 }
-@media (max-width: 409px) 
+@media (min-width:320px) and (max-width: 409px) 
 {
     div.buttons
     {
         flex-direction: column;
-        width: 100%;
-    }   
+        width: 20%;
+    }
 }
