@@ -5,7 +5,7 @@ const Login = () =>
     return ( 
         <>
             <div className="d-flex justify-content-end mt-5">
-                <form action="" className="row g-4 m-5 bg-light" style={{maxWidth: "500px"}}>
+                <form action="" className="row g-4 m-5 bg-light" style={{maxWidth: "400px"}}>
                     <h1 className="my-3 text-center text-uppercase">Login Form</h1>
                     <div className="col-md-12">
                         <label htmlFor="username" className="form-label">Username</label>
