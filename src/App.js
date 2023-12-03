@@ -2,6 +2,7 @@ import './App.css';
 import { Routes, Route } from 'react-router';
 import LandingPage from './components/Landing Page';
 import Login from './components/Login';
+import PageNotFound from './components/PageNotFound';
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <Routes>
         <Route path='/' element={<LandingPage/>}></Route>
         <Route path='/login' element={<Login/>}></Route>
+        <Route path='*' element={<PageNotFound/>}></Route>
       </Routes>
     </>
   );
