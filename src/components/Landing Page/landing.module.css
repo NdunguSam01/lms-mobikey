@@ -26,17 +26,58 @@
 }
 .message
 {
-    font-size: 20px;
     text-align: center;
     text-transform: uppercase;
     margin-top: 180px;
     background: rgba(0, 0, 0, 0.25);
     color: #f1f1f1;
-    padding: 64px;
+    padding: 60px;
     line-height: 4;
 }
 .message h2
 {
     font-weight: bold;
-    font-size: 2em;
+    font-size: 2.2em;
+}
+.message p
+{
+    font-size: 1.5em;
+}
+@media screen and (min-width:320px) and (max-width: 425px) 
+{
+    .message
+    {
+        padding: 25px;
+        margin-top: 160px;
+        line-height: 2;
+    }
+    .message h2
+    {
+        font-size: 1.5em;
+    }
+    .message p
+    {
+        font-size: 1.2em;
+    }
+}
+@media screen and (min-width:1440px)
+{
+    .navLink
+    {
+        font-size: 1.7em;
+    }
+    .message
+    {
+        padding: 25px;
+        margin-top: 300px;
+        line-height: 4;
+    }
+    .message h2
+    {
+        font-size: 3em;
+    }
+    .message p
+    {
+        font-size: 2em;
+    }
 }
