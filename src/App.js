@@ -4,7 +4,7 @@ import LandingPage from './components/Landing Page/Landing Page';
 import Login from './components/Login';
 import PageNotFound from './components/PageNotFound';
 import LeaveForm from './components/Leave Form';
-import Navbar from './components/Navbar';
+import Navbar from './components/Navbar/Navbar';
 
 function App() {
   return (

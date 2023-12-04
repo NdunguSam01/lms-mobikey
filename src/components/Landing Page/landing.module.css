@@ -5,7 +5,7 @@
     background-size: cover;
     height: 100vh;
 }
-.navbar
+nav
 {
     display: flex;
     justify-content: flex-end;
