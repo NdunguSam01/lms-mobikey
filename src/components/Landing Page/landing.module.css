@@ -1,0 +1,42 @@
+.background
+{
+    background: url(../..//assets/images/Background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+.navbar
+{
+    display: flex;
+    justify-content: flex-end;
+}
+.navLink
+{
+    background: linear-gradient(rgba(0, 0, 0, 0.377), rgba(0, 0, 0, 0.062));
+    padding: 20px 30px;
+    font-size: 1.2em;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+}
+.navLink:hover
+{
+    cursor: pointer;
+    color: blue;
+}
+.message
+{
+    font-size: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 180px;
+    background: rgba(0, 0, 0, 0.25);
+    color: #f1f1f1;
+    padding: 64px;
+    line-height: 4;
+}
+.message h2
+{
+    font-weight: bold;
+    font-size: 2em;
+}
