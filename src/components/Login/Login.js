@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom";
-import MANImage from '../assets/images/Logo.png'
-import BackgroundStyling from './Landing Page/landing.module.css'
-import FormStyling from './Login/login.module.css'
+import MANImage from '../../assets/images/Logo.png'
+import BackgroundStyling from '../Landing Page/landing.module.css'
+import FormStyling from './login.module.css'
 const Login = () => 
 {
     return ( 

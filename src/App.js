@@ -1,7 +1,7 @@
 import './App.css';
 import { Routes, Route } from 'react-router';
 import LandingPage from './components/Landing Page/Landing Page';
-import Login from './components/Login';
+import Login from './components/Login/Login';
 import PageNotFound from './components/PageNotFound';
 import LeaveForm from './components/Leave Form';
 import Navbar from './components/Navbar/Navbar';
