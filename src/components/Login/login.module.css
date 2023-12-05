@@ -1,0 +1,10 @@
+.parentFlex
+{
+    display: flex;
+    justify-content: flex-end;
+}
+.form
+{
+    height: max-content;
+    width: 450px;
+}
