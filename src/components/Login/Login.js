@@ -8,7 +8,7 @@ const Login = () =>
         <>
             <div className={`${FormStyling.parentFlex} ${BackgroundStyling.background}`}>
                 <form action="" className={`row g-4 mt-5 ms-4 me-4 bg-light ${FormStyling.form}`}>
-                    <img src={MANImage} alt="MAN Logo"/>
+                    <img src={MANImage} alt="MAN Logo" className={FormStyling.image}/>
                     <h1 className={`my-3 text-center text-uppercase ${FormStyling.h1}`}>Login Form</h1>
                     <div className="col-md-12">
                         <label htmlFor="username" className="form-label fs-5">Username</label>
