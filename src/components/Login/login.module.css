@@ -20,5 +20,12 @@
 }
 .childFlex button, .childFlex a
 {
-    width: 40%;
+    width: 44%;
+}
+@media screen and (min-width: 320px) and (max-width: 767px) 
+{
+    .childFlex button, .childFlex a
+    {
+        width: 40%;
+    }
 }
