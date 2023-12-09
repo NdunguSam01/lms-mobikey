@@ -22,10 +22,24 @@
 {
     width: 44%;
 }
-@media screen and (min-width: 320px) and (max-width: 767px) 
+@media screen and (min-width: 320px) and (max-width: 374px) 
 {
     .childFlex button, .childFlex a
     {
         width: 40%;
+    }
+}
+@media screen and (min-width: 375px) and (max-width: 425px) 
+{
+    .childFlex button, .childFlex a
+    {
+        width: 42%;
+    }
+}
+@media screen and (min-width: 426px) and (max-width: 767px) 
+{
+    .childFlex button, .childFlex a
+    {
+        width: 43%;
     }
 }
