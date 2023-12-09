@@ -1,11 +1,11 @@
 .background
 {
-    background: url(../..//assets/images/Background.jpg);
+    background: url(../../assets/images/Background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
 }
-nav
+.navbar
 {
     display: flex;
     justify-content: flex-end;

@@ -40,12 +40,16 @@ const LeaveForm = () =>
                     <input type="date" id="endDate" className="form-control" required/>
                 </div>
                 <div className="col-md-4">
+                    <label htmlFor="numDays">Number of days</label>
+                    <input type="number" id="numDays" className="form-control" required readOnly/>
+                </div>
+                <div className="col-md-6">
                     <label htmlFor="fileAttachment">Attach file</label>
                     <input type="file" id="fileAttachment" className="form-control" required/>
                 </div>
-                <div className="col-md-12">
+                <div className="col-md-6">
                     <label htmlFor="reason">Reason for leave</label>
-                    <textarea name="" id="reason" cols="20" rows="4" className="form-control" placeholder="Reason for leave (Optional)"></textarea>
+                    <textarea name="" id="reason" cols="20" rows="1" className="form-control" placeholder="Reason for leave (Optional)"></textarea>
                 </div>
                 <div className="col-md-12 text-center">
                     <button type="submit" className="btn btn-success">Submit request</button>
