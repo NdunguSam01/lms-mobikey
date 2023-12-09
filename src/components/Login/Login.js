@@ -22,7 +22,7 @@ const Login = () =>
                         <button type="submit" className="btn btn-success text-center mt-2">Login</button>
                         <NavLink to="/" className="btn btn-danger mt-2 ms-5">Back</NavLink>
                     </div>
-                    <div className="container buttons">
+                    <div className="container">
                         <NavLink to="/forgot" className="col-12 btn btn-danger mt-4 mb-4">Forgot password?</NavLink>
                     </div>
                 </form> 
