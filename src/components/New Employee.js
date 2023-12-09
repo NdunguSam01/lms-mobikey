@@ -5,22 +5,22 @@ const NewEmployee = () =>
     return ( 
         <>
             <h1 className="text-center text-uppercase mt-5">New Employee</h1>
-            <form action="" className="row g-4 m-5">
+            <form action="" className="row g-4 mt-3 mx-5">
                 <div className="col-md-6">
-                    <label htmlFor="firstName" className="form-label">First Name</label>
-                    <input type="text"id="firstName" className="form-control" placeholder="First Name" required/>
+                    <label htmlFor="firstName" className="form-label fs-5">First Name</label>
+                    <input type="text"id="firstName" className="form-control fs-6" placeholder="First Name" required/>
                 </div>
                 <div className="col-md-6">
-                    <label htmlFor="lastName" className="form-label">Last Name</label>
-                    <input type="text" id="lastName" className="form-control" placeholder="Last Name"  required/>
+                    <label htmlFor="lastName" className="form-label fs-5">Last Name</label>
+                    <input type="text" id="lastName" className="form-control fs-6" placeholder="Last Name"  required/>
                 </div>
                 <div className="col-md-6">
-                    <label htmlFor="email" className="form-label">Email address</label>
-                    <input type="email" id="email" className="form-control" placeholder="Email address" required/>
+                    <label htmlFor="email" className="form-label fs-5">Email address</label>
+                    <input type="email" id="email" className="form-control fs-6" placeholder="Email address" required/>
                 </div>
                 <div className="col-md-6">
-                    <label htmlFor="department" className="form-label">Department</label>
-                    <select id="department" className="form-select" required>
+                    <label htmlFor="department" className="form-label fs-5">Department</label>
+                    <select id="department" className="form-select fs-6" required>
                         <option value="">Select Department</option>
                         <option value="Finance">Finance</option>
                         <option value="Logistics">Logistics</option>
@@ -32,8 +32,8 @@ const NewEmployee = () =>
                     </select>
                 </div>
                 <div className="col-md-6">
-                    <label htmlFor="section" className="form-label">Section</label>
-                    <select id="section" className="form-select">
+                    <label htmlFor="section" className="form-label fs-5">Section</label>
+                    <select id="section" className="form-select fs-6">
                         <option value="">Select Section</option>
                         <option value="Mobikey">Mobikey</option>
                         <option value="JAP/OOTB">JAP Assembler</option>
@@ -41,16 +41,16 @@ const NewEmployee = () =>
                     </select>
                 </div>
                 <div className="col-md-6">
-                    <label htmlFor="position" className="form-label">Position</label>
-                    <input type="text" id="position" className="form-control" placeholder="Position" required/>
+                    <label htmlFor="position" className="form-label fs-5">Position</label>
+                    <input type="text" id="position" className="form-control fs-6" placeholder="Position" required/>
                 </div>
                 <div className="col-md-6">
-                    <label htmlFor="startDate" className="form-label">Start Date</label>
-                    <input type="date" id="startDate" className="form-control" />
+                    <label htmlFor="startDate" className="form-label fs-5">Start Date</label>
+                    <input type="date" id="startDate" className="form-control fs-6" />
                 </div>
                 <div className="col-md-6">
-                    <label htmlFor="role" className="form-label">Role</label>
-                    <select id="role" className="form-select">
+                    <label htmlFor="role" className="form-label fs-5">Role</label>
+                    <select id="role" className="form-select fs-6">
                         <option value="">Select Role</option>
                         <option value="User">User</option>
                         <option value="HOD">Head of Department</option>
