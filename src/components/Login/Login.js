@@ -18,9 +18,12 @@ const Login = () =>
                         <label htmlFor="password" className="form-label fs-5">Password</label>
                         <input type="password" className="form-control mt-2" id="password" placeholder="Enter your password" required/>
                     </div>
+                    <div className={FormStyling.childFlex}>
+                        <button type="submit" className="btn btn-success text-center mt-2">Login</button>
+                        <NavLink to="/" className="btn btn-danger mt-2 ms-5">Back</NavLink>
+                    </div>
                     <div className="container buttons">
-                        <button type="submit" className="btn btn-success text-center col-12 mt-4">Login</button>
-                        <NavLink to="/" className="col-12 btn btn-danger mt-4 mb-4">Back</NavLink>
+                        <NavLink to="/forgot" className="col-12 btn btn-danger mt-4 mb-4">Forgot password?</NavLink>
                     </div>
                 </form> 
             </div>
