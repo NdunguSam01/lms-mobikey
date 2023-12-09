@@ -5,6 +5,7 @@ const Navbar = () =>
     return (  
         <nav className="nav d-flex justify-content-end bg-dark">
             <NavLink to="/profile" className={styles.link}>Profile</NavLink>
+            <NavLink to="/new-employee" className={styles.link}>New Employee</NavLink>
             <NavLink to="/login" className={styles.link}>Sign Out</NavLink>
         </nav>
     );
