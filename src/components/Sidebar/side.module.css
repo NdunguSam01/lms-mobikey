@@ -1,9 +1,9 @@
 .sideSection
 {
-    background-color: black;
+    margin-top: 0;
     color: white;
     width: 350px;
-    height: 100vh;
+    height: calc(100vh - 60px);
 }
 .sideOption
 {

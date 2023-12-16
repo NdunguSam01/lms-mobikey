@@ -5,7 +5,7 @@ import { NavLink } from 'react-router-dom';
 const Sidebar = () => 
 {
     return ( 
-        <aside className={SideStyles.sideSection}>
+        <aside className={`bg-dark ${SideStyles.sideSection}`}>
             <img src={Logo} alt='Mobikey Logo' className={`bg-light ${SideStyles.image}`}/>
             <div className={SideStyles.sideOption}>
                 <i className={`fa fa-home ${SideStyles.sideIcons}`}></i>

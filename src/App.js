@@ -7,6 +7,7 @@ import LeaveForm from './components/Leave Form';
 import Navbar from './components/Navbar/Navbar';
 import NewEmployee from './components/New Employee';
 import Sidebar from './components/Sidebar/Side';
+import Dashboard from './Pages/Dashboard';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Routes>
         <Route path='/' element={<LandingPage/>}></Route>
         <Route path='/login' element={<Login/>}></Route>
+        <Route path='/dashboard' element={<Dashboard/>}></Route>
         <Route path='/leave' element={<LeaveForm/>}></Route>
         <Route path='/navbar' element={<Navbar/>}></Route>
         <Route path='/new-employee' element={<NewEmployee/>}></Route>
