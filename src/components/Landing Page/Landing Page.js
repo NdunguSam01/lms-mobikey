@@ -7,8 +7,6 @@ const LandingPage = () =>
         <div className={`${LinkStyles.background}`}>
             <nav className={LinkStyles.navbar}>
                 <NavLink to="/login" className={LinkStyles.navLink}>Login</NavLink>
-                <NavLink to="/leave" className={LinkStyles.navLink}>Leave Form</NavLink>
-                <NavLink to="/navbar" className={LinkStyles.navLink}>Navbar</NavLink>
             </nav>
             <div className={LinkStyles.message}>
                 <h2>Mobikey Truck and Bus Limited</h2>
