@@ -14,7 +14,6 @@
 {
     background: linear-gradient(rgba(0, 0, 0, 0.377), rgba(0, 0, 0, 0.062));
     padding: 20px 30px;
-    font-size: 1.2em;
     text-decoration: none;
     text-align: center;
     color: white;
@@ -30,23 +29,17 @@
     text-transform: uppercase;
     background: rgba(0, 0, 0, 0.25);
     color: #f1f1f1;
-    line-height: 2;
 }
 .message h2
 {
     font-weight: bold;
-    font-size: 2.2em;
 }
-.message p
-{
-    font-size: 1.5em;
-}
-@media screen and (min-width:320px) and (max-width: 425px) 
+@media screen and (min-width:320px) and (max-width: 375px) 
 {
     .message
     {
         padding: 20px;
-        margin-top: 170px;
+        margin-top: 180px;
     }
     .message h2
     {
@@ -57,30 +50,50 @@
         font-size: 1.2em;
     }
 }
+@media screen and (min-width:376px) and (max-width: 425px) 
+{
+    .message
+    {
+        padding: 20px;
+        margin-top: 260px;
+        line-height: 1.2;
+    }
+    .message h2
+    {
+        font-size: 1.7em;
+    }
+    .message p
+    {
+        font-size: 1.1em;
+    }
+}
 @media screen and (min-width:426px) and (max-width: 768px) 
 {
     .message
     {
-        margin-top: 190px;
+        padding: 25px;
+        margin-top: 330px;
+        line-height: 2;
     }
     .message h2
     {
-        font-size: 2em;
+        font-size: 2.1em;
     }
     .message p
     {
-        font-size: 1.5em;
+        font-size: 1.4em;
     }
 }
 @media screen and (min-width:769px) and (max-width: 1024px) 
 {
     .navLink
     {
-        font-size: 1.5em;
+        font-size: 1.4em;
     }
     .message
     {
-        margin-top: 250px;
+        padding: 30px;
+        margin-top: 300px;
     }
     .message h2
     {
@@ -91,7 +104,7 @@
         font-size: 1.5em;
     }
 }
-@media screen and (min-width:1025px) and (max-width: 1440px) 
+@media screen and (min-width:1025px) and (max-width: 1439px) 
 {
     .navLink
     {
@@ -99,15 +112,37 @@
     }
     .message
     {
-        margin-top: 140px;
+        margin-top: 150px;
         padding: 40px;
+        line-height: 2.5;
     }
     .message h2
     {
-        font-size: 2.7em;
+        font-size: 2.5em;
     }
     .message p
     {
-        font-size: 1.6em;
+        font-size: 1.4em;
+    }
+}
+@media screen and (min-width:1440px)
+{
+    .navLink
+    {
+        font-size: 1.8em;
+    }
+    .message
+    {
+        margin-top: 290px;
+        padding: 45px;
+        line-height: 3;
+    }
+    .message h2
+    {
+        font-size: 3em;
+    }
+    .message p
+    {
+        font-size: 2em;
     }
 }
