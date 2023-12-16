@@ -62,7 +62,7 @@ const NewEmployee = () =>
                     <button type="submit" className="btn btn-success mt-4">Add employee</button>
                 </div>
                 <div className="col-md-12 text-center">
-                    <NavLink to="/navbar" className="btn btn-danger">Cancel</NavLink>
+                    <NavLink to="/dashboard" className="btn btn-danger">Cancel</NavLink>
                 </div>
             </form>
         </>
