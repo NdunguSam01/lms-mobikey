@@ -7,22 +7,31 @@ const Sidebar = () =>
     return ( 
         <aside className={`bg-dark ${SideStyles.sideSection}`}>
             <img src={Logo} alt='Mobikey Logo' className={`bg-light ${SideStyles.image}`}/>
-            <div className={SideStyles.sideOption}>
-                <i className={`fa fa-home ${SideStyles.sideIcons}`}></i>
-                <NavLink to="/dashboad" className={SideStyles.navLink}>Dashboard</NavLink>
-            </div>
-            <div className={SideStyles.sideOption}>
-                <i className={`fa fa-calendar ${SideStyles.sideIcons}`}></i>
-                <NavLink to="/leave" className={SideStyles.navLink}>Leave</NavLink>
-            </div>
-            <div className={SideStyles.sideOption}>
-                <i className={`fa fa-clock-o ${SideStyles.sideIcons}`}></i>
-                <NavLink to="/pending" className={SideStyles.navLink}>Employee Requests</NavLink>
-            </div>
-            <div className={SideStyles.sideOption}>
-                <i className={`fa fa-user ${SideStyles.sideIcons}`}></i>
-                <NavLink to="/users" className={SideStyles.navLink}>Employees</NavLink>
-            </div>
+            <NavLink to="/dashboard" className={SideStyles.navLink}>
+                <div className={SideStyles.sideOption}>
+                    <i className={`fa fa-home ${SideStyles.sideIcons}`}></i>
+                    <h3>Dashboard</h3>
+                </div>
+            </NavLink>
+            <NavLink to="/leave" className={SideStyles.navLink}>
+                <div className={SideStyles.sideOption}>
+                    <i className={`fa fa-calendar ${SideStyles.sideIcons}`}></i>
+                    <h3>Leave</h3>
+                </div>
+            </NavLink>
+            <NavLink to="/pending" className={SideStyles.navLink}>
+                <div className={SideStyles.sideOption}>
+                    <i className={`fa fa-clock-o ${SideStyles.sideIcons}`}></i>
+                    <h3>Employee Requests</h3>
+                </div>
+            </NavLink>
+            <NavLink to="/users" className={SideStyles.navLink}>
+                <div className={SideStyles.sideOption}>
+                    <i className={`fa fa-user ${SideStyles.sideIcons}`}></i>
+                    <h3>Employees</h3>
+                </div>
+            </NavLink>
+            
         </aside>
      );
 }
