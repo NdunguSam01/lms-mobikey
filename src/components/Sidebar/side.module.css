@@ -1,0 +1,27 @@
+.sideSection
+{
+    background-color: black;
+    color: white;
+    width: 350px;
+    height: 100vh;
+}
+.sideOption
+{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+    padding: 20px;
+}
+.sideOption:hover
+{
+    background-color: purple;
+}
+.sideIcons
+{
+    font-size: 25px;
+}
+.image
+{
+    width: 100%;
+}

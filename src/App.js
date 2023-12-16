@@ -6,6 +6,7 @@ import PageNotFound from './components/PageNotFound';
 import LeaveForm from './components/Leave Form';
 import Navbar from './components/Navbar/Navbar';
 import NewEmployee from './components/New Employee';
+import Sidebar from './components/Sidebar/Side';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path='/leave' element={<LeaveForm/>}></Route>
         <Route path='/navbar' element={<Navbar/>}></Route>
         <Route path='/new-employee' element={<NewEmployee/>}></Route>
+        <Route path='/sidebar' element={<Sidebar/>}></Route>
         <Route path='*' element={<PageNotFound/>}></Route>
       </Routes>
     </>
