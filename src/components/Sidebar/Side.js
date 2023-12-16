@@ -19,13 +19,13 @@ const Sidebar = () =>
                     <h3 className={SideStyles.h3}>Leave</h3>
                 </div>
             </NavLink>
-            <NavLink to="/pending" className={SideStyles.navLink}>
+            <NavLink to="/requests" className={SideStyles.navLink}>
                 <div className={SideStyles.sideOption}>
                     <i className={`fa fa-clock-o ${SideStyles.sideIcons}`}></i>
                     <h3 className={SideStyles.h3}>Employee Requests</h3>
                 </div>
             </NavLink>
-            <NavLink to="/users" className={SideStyles.navLink}>
+            <NavLink to="/employees" className={SideStyles.navLink}>
                 <div className={SideStyles.sideOption}>
                     <i className={`fa fa-user ${SideStyles.sideIcons}`}></i>
                     <h3 className={SideStyles.h3}>Employees</h3>
