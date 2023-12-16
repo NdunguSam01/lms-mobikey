@@ -17,7 +17,7 @@ const Sidebar = () =>
             </div>
             <div className={SideStyles.sideOption}>
                 <i className={`fa fa-clock-o ${SideStyles.sideIcons}`}></i>
-                <NavLink to="/pending" className={SideStyles.navLink}>Pending Request</NavLink>
+                <NavLink to="/pending" className={SideStyles.navLink}>Employee Requests</NavLink>
             </div>
             <div className={SideStyles.sideOption}>
                 <i className={`fa fa-user ${SideStyles.sideIcons}`}></i>

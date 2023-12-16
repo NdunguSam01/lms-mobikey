@@ -25,6 +25,9 @@ const Login = () =>
                     <div className="container">
                         <NavLink to="/forgot" className="col-12 btn btn-danger mt-3 mb-3">Forgot password?</NavLink>
                     </div>
+                    <div className="container">
+                        <NavLink to="/Dashboard" className="col-12 btn btn-success mt-2 mb-3">Dashboard</NavLink>
+                    </div>
                 </form> 
             </div>
         </>
