@@ -27,7 +27,11 @@
 }
 .navLink
 {
-    font-size: 1.4em;
     text-decoration: none;
     color: inherit;
+}
+.h3
+{
+    font-size: 1.5em;
+    padding-top: 10px;
 }

@@ -10,25 +10,25 @@ const Sidebar = () =>
             <NavLink to="/dashboard" className={SideStyles.navLink}>
                 <div className={SideStyles.sideOption}>
                     <i className={`fa fa-home ${SideStyles.sideIcons}`}></i>
-                    <h3>Dashboard</h3>
+                    <h3 className={SideStyles.h3}>Dashboard</h3>
                 </div>
             </NavLink>
             <NavLink to="/leave" className={SideStyles.navLink}>
                 <div className={SideStyles.sideOption}>
                     <i className={`fa fa-calendar ${SideStyles.sideIcons}`}></i>
-                    <h3>Leave</h3>
+                    <h3 className={SideStyles.h3}>Leave</h3>
                 </div>
             </NavLink>
             <NavLink to="/pending" className={SideStyles.navLink}>
                 <div className={SideStyles.sideOption}>
                     <i className={`fa fa-clock-o ${SideStyles.sideIcons}`}></i>
-                    <h3>Employee Requests</h3>
+                    <h3 className={SideStyles.h3}>Employee Requests</h3>
                 </div>
             </NavLink>
             <NavLink to="/users" className={SideStyles.navLink}>
                 <div className={SideStyles.sideOption}>
                     <i className={`fa fa-user ${SideStyles.sideIcons}`}></i>
-                    <h3>Employees</h3>
+                    <h3 className={SideStyles.h3}>Employees</h3>
                 </div>
             </NavLink>
             
