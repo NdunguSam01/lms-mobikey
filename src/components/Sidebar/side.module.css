@@ -25,3 +25,9 @@
 {
     width: 100%;
 }
+.navLink
+{
+    font-size: 1.6em;
+    text-decoration: none;
+    color: inherit;
+}
