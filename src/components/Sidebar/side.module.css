@@ -5,6 +5,17 @@
     width: 350px;
     height: calc(100vh - 60px);
 }
+.sidebarList
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.sidebarList li
+{
+    margin: 0;
+    padding: 0;
+}
 .sideOption
 {
     display: flex;
@@ -27,7 +38,15 @@
 }
 .navLink
 {
-    font-size: 1.4em;
     text-decoration: none;
     color: inherit;
+}
+.dropdownContent li
+{
+    margin-left: 20px;
+}
+.h3
+{
+    font-size: 1.5em;
+    padding-top: 10px;
 }
