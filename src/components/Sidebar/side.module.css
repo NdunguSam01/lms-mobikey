@@ -4,6 +4,7 @@
     color: white;
     width: 350px;
     height: calc(100vh - 60px);
+    background-color: black;
 }
 .sidebarList
 {
@@ -21,7 +22,7 @@
     display: flex;
     align-items: center;
     gap: 20px;
-    margin-top: 25px;
+    margin-top: 20px;
     padding: 20px;
 }
 .sideOption:hover
@@ -49,4 +50,11 @@
 {
     font-size: 1.5em;
     padding-top: 10px;
+}
+@media screen and (min-width:320px) and (max-width:425px) 
+{
+    .sideSection
+    {
+        width: 100%;
+    }
 }

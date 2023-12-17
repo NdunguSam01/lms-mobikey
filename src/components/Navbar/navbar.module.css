@@ -1,6 +1,18 @@
 .navbar
 {
     height: 60px;
+    background-color: black;
+}
+.icon
+{
+    font-size: 30px;
+    margin: 15px 30px;
+    color: white;
+}
+.navLinks
+{
+    float: right;
+    margin: 15px 10px;
 }
 .link
 {
