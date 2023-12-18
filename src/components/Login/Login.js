@@ -23,10 +23,10 @@ const Login = () =>
                         <NavLink to="/" className="btn btn-danger mt-1 ms-5">Back</NavLink>
                     </div>
                     <div className="container">
-                        <NavLink to="/forgot" className="col-12 btn btn-danger mt-3 mb-3">Forgot password?</NavLink>
+                        <NavLink to="/forgot" className="col-12 btn btn-danger my-3">Forgot password?</NavLink>
                     </div>
                     <div className="container">
-                        <NavLink to="/Dashboard" className="col-12 btn btn-success mt-2 mb-3">Dashboard</NavLink>
+                        <NavLink to="/Dashboard" className="col-12 btn btn-success my-2">Dashboard</NavLink>
                     </div>
                 </form> 
             </div>
