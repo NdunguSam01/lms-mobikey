@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import LinkStyles from './landing.module.css'
+import LinkStyles from '../assets/css/landing.module.css'
 
 const LandingPage = () => 
 {

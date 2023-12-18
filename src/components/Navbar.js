@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import styles from './navbar.module.css'
+import styles from '../assets/css/navbar.module.css'
 
 const Navbar = ({openSidebar, sidebarOpen}) => 
 {

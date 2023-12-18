@@ -1,5 +1,5 @@
-import SideStyles from './side.module.css'
-import Logo from '../../assets/images/Logo.png'
+import SideStyles from '../assets/css/sidebar.module.css'
+import Logo from '../assets/images/Logo.png'
 import { NavLink } from 'react-router-dom';
 
 const Sidebar = ({sidebarOpen}) => 

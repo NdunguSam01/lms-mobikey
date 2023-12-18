@@ -1,5 +1,5 @@
-import Navbar from '../components/Navbar/Navbar'
-import Sidebar from '../components/Sidebar/Side';
+import Navbar from '../components/Navbar'
+import Sidebar from '../components/Side';
 import { useState } from 'react';
 import Leave from './Leave';
 import Employees from './Employees';
@@ -16,7 +16,7 @@ const Dashboard = () =>
         <>
             <Navbar openSidebar={openSidebar} sidebarOpen={sidebarOpen}/>
             <Sidebar sidebarOpen={sidebarOpen}/>
-            <div className="conttent-contaiiner">
+            <div className="content-contaiiner">
                 <Leave/>
                 <Employees/>
             </div>

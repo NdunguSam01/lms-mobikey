@@ -1,4 +1,4 @@
-import LeaveForm from '../components/Leave Form/Leave Form'
+import LeaveForm from '../components/Leave Form'
 import  '../assets/css/accordion.css'
 
 const Leave = () => 

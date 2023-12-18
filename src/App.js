@@ -1,7 +1,7 @@
 import './App.css';
 import { Routes, Route } from 'react-router';
-import LandingPage from './components/Landing Page/Landing Page';
-import Login from './components/Login/Login';
+import LandingPage from './components/Landing Page';
+import Login from './components/Login';
 import PageNotFound from './components/PageNotFound';
 import Dashboard from './Pages/Dashboard';
 
