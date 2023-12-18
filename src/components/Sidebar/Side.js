@@ -43,14 +43,6 @@ const Sidebar = ({sidebarOpen}) =>
                             </div>
                         </NavLink>
                     </li>
-                    <li>
-                        <NavLink to="/new-employee" className={SideStyles.navLink}>
-                            <div className={SideStyles.sideOption}>
-                                <i className={`fa fa-plus ${SideStyles.sideIcons}`}></i>
-                                <h3 className={SideStyles.h3}>New Employee</h3>
-                            </div>
-                        </NavLink>
-                    </li>
                 </ul>
             </aside>
             )}
