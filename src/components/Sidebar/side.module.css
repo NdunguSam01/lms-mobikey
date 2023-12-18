@@ -27,7 +27,8 @@
 }
 .sideOption:hover
 {
-    background-color: purple;
+    background-color: #ddd;
+    color: black;
 }
 .sideIcons
 {
