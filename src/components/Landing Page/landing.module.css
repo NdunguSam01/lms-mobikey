@@ -39,7 +39,7 @@
     .message
     {
         padding: 20px;
-        margin-top: 180px;
+        margin-top: 220px;
     }
     .message h2
     {
@@ -55,16 +55,16 @@
     .message
     {
         padding: 20px;
-        margin-top: 260px;
+        margin-top: 220px;
         line-height: 1.2;
     }
     .message h2
     {
-        font-size: 1.7em;
+        font-size: 1.5em;
     }
     .message p
     {
-        font-size: 1.1em;
+        font-size: .9em;
     }
 }
 @media screen and (min-width:426px) and (max-width: 768px) 
@@ -72,7 +72,7 @@
     .message
     {
         padding: 25px;
-        margin-top: 330px;
+        margin-top: 220px;
         line-height: 2;
     }
     .message h2
@@ -97,22 +97,22 @@
     }
     .message h2
     {
-        font-size: 2.5em;
+        font-size: 2.8em;
     }
     .message p
     {
-        font-size: 1.5em;
+        font-size: 1.7em;
     }
 }
 @media screen and (min-width:1025px) and (max-width: 1439px) 
 {
     .navLink
     {
-        font-size: 1.2em;
+        font-size: 1.3em;
     }
     .message
     {
-        margin-top: 150px;
+        margin-top: 260px;
         padding: 40px;
         line-height: 2.5;
     }
@@ -133,16 +133,16 @@
     }
     .message
     {
-        margin-top: 290px;
+        margin-top: 420px;
         padding: 45px;
         line-height: 3;
     }
     .message h2
     {
-        font-size: 3em;
+        font-size: 3.5em;
     }
     .message p
     {
-        font-size: 2em;
+        font-size: 2.5em;
     }
 }
