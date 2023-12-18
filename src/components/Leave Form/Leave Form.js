@@ -5,11 +5,11 @@ const LeaveForm = () =>
             <h1 className="text-center text-uppercase">Leave Request Form</h1>
             <form action="" className="row g-4 m-2">
                 <div className="col-md-12">
-                    <label htmlFor="availableDays" className="form-label">Available Leave Days</label>
+                    <label htmlFor="availableDays" className="form-label fs-5">Available Leave Days</label>
                     <input type="text" id="availableDays" className="form-control" placeholder="Available Leave Days" readOnly/>
                 </div>
                 <div className="col-md-12">
-                    <label htmlFor="leaveType">Leave Type</label>
+                    <label htmlFor="leaveType" className="form-label fs-5">Leave Type</label>
                     <select id="leaveType" className="form-select" required>
                         <option value="normal">Normal Leave</option>
                         <option value="paternity">Paternity Leave</option>
@@ -18,27 +18,27 @@ const LeaveForm = () =>
                     </select>
                 </div>
                 <div className="col-md-4">
-                    <label htmlFor="startDate">Start Date</label>
+                    <label htmlFor="startDate" className="form-label fs-5">Start Date</label>
                     <input type="date" id="startDate" className="form-control" required/>
                 </div>
                 <div className="col-md-4">
-                    <label htmlFor="endDate">End Date</label>
+                    <label htmlFor="endDate" className="form-label fs-5">End Date</label>
                     <input type="date" id="endDate" className="form-control" required/>
                 </div>
                 <div className="col-md-4">
-                    <label htmlFor="numDays">Number of days</label>
+                    <label htmlFor="numDays" className="form-label fs-5">Number of days</label>
                     <input type="number" id="numDays" className="form-control" required readOnly/>
                 </div>
                 <div className="col-md-6">
-                    <label htmlFor="fileAttachment">Attach file</label>
+                    <label htmlFor="fileAttachment" className="form-label fs-5">Attach file</label>
                     <input type="file" id="fileAttachment" className="form-control" required/>
                 </div>
                 <div className="col-md-6">
-                    <label htmlFor="reason">Reason for leave</label>
+                    <label htmlFor="reason" className="form-label fs-5">Reason for leave</label>
                     <textarea name="" id="reason" cols="20" rows="1" className="form-control" placeholder="Reason for leave (Optional)"></textarea>
                 </div>
                 <div className="col-md-12 text-center">
-                    <button type="submit" className="btn btn-success">Submit request</button>
+                    <button type="submit" className="btn btn-success fs-6">Submit request</button>
                 </div>
             </form>
         </>

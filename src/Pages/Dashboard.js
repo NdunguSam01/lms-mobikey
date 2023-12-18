@@ -2,6 +2,7 @@ import Navbar from '../components/Navbar/Navbar'
 import Sidebar from '../components/Sidebar/Side';
 import { useState } from 'react';
 import Leave from './Leave';
+import Employees from './Employees';
 
 const Dashboard = () => 
 {
@@ -17,6 +18,7 @@ const Dashboard = () =>
             <Sidebar sidebarOpen={sidebarOpen}/>
             <div className="conttent-contaiiner">
                 <Leave/>
+                <Employees/>
             </div>
         </>
      );

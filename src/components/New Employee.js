@@ -1,11 +1,9 @@
-import { NavLink } from "react-router-dom";
-
 const NewEmployee = () => 
 {
     return ( 
         <>
-            <h1 className="text-center text-uppercase mt-5">New Employee</h1>
-            <form action="" className="row g-4 mt-3 mx-5">
+            <h1 className="text-center text-uppercase">New Employee</h1>
+            <form action="" className="row g-4 m-2">
                 <div className="col-md-6">
                     <label htmlFor="firstName" className="form-label fs-5">First Name</label>
                     <input type="text"id="firstName" className="form-control fs-6" placeholder="First Name" required/>
@@ -59,10 +57,7 @@ const NewEmployee = () =>
                     </select>
                 </div>
                 <div className="col-md-12 text-center">
-                    <button type="submit" className="btn btn-success mt-4">Add employee</button>
-                </div>
-                <div className="col-md-12 text-center">
-                    <NavLink to="/dashboard" className="btn btn-danger">Cancel</NavLink>
+                    <button type="submit" className="btn btn-success mt-4 fs-6">Add employee</button>
                 </div>
             </form>
         </>

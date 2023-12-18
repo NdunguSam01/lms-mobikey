@@ -1,0 +1,11 @@
+.accordion
+{
+    width: 70%;
+    margin: 50px auto;
+    color: #ddd;
+}
+.accordion h2 button
+{
+    text-transform: uppercase;
+    font-size: 0.8em;
+}
