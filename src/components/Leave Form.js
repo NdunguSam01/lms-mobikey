@@ -1,5 +1,13 @@
 const LeaveForm = () => 
 {
+    const d=new Date()
+    const currentYear=d.getFullYear()
+    const month=d.getMonth() + 1
+    const date=d.getDate()
+
+    const minDateRange=`${currentYear}-${month}-${date}`
+    const maxDateRange=currentYear + "-12-31"
+    
     return ( 
         <>
             <form action="" className="row g-4 mx-2 mt-1">
@@ -19,11 +27,11 @@ const LeaveForm = () =>
                 </div>
                 <div className="col-md-4">
                     <label htmlFor="startDate" className="form-label fs-5">Start Date</label>
-                    <input type="date" id="startDate" className="form-control" required/>
+                    <input type="date" id="startDate" min={minDateRange} max={maxDateRange} className="form-control" required/>
                 </div>
                 <div className="col-md-4">
                     <label htmlFor="endDate" className="form-label fs-5">End Date</label>
-                    <input type="date" id="endDate" className="form-control" required/>
+                    <input type="date" id="endDate" min={minDateRange} max={maxDateRange} className="form-control" required/>
                 </div>
                 <div className="col-md-4">
                     <label htmlFor="numDays" className="form-label fs-5">Number of days</label>
