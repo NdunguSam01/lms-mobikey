@@ -1,8 +1,8 @@
 import Navbar from '../components/Navbar'
 import Sidebar from '../components/Side';
 import { useState } from 'react';
-import Leave from './Leave';
-import Employees from './Employees';
+import LeaveForm from '../components/Leave Form'
+import NewEmployee from '../components/New Employee'
 
 const Dashboard = () => 
 {
@@ -17,8 +17,8 @@ const Dashboard = () =>
             <Navbar sidebarStatusFunction={sidebarStatusFunction} sidebarOpen={sidebarOpen}/>
             <Sidebar sidebarOpen={sidebarOpen} sidebarStatusFunction={sidebarStatusFunction}/>
             <div className="content-contaiiner">
-                <Leave/>
-                <Employees/>
+                <LeaveForm/>
+                <NewEmployee/>
             </div>
         </>
      );
