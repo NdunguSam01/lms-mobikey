@@ -39,7 +39,7 @@ const LeaveForm = () =>
                 </div>
                 <div className="col-md-6">
                     <label htmlFor="fileAttachment" className="form-label fs-5">Attach file</label>
-                    <input type="file" id="fileAttachment" className="form-control" required/>
+                    <input type="file" id="fileAttachment" className="form-control" accept="image/*, application/pdf" required/>
                 </div>
                 <div className="col-md-6">
                     <label htmlFor="reason" className="form-label fs-5">Reason for leave</label>
