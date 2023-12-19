@@ -1,0 +1,16 @@
+.dropdown
+{
+    transition: .5s;
+}
+.dropdownIcon
+{
+    margin-left: auto;
+}
+.dropdownContent
+{
+    transition-timing-function: ease-in;
+}
+.dropdownContent li
+{
+    margin-left: 15px;
+}
