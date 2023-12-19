@@ -20,13 +20,13 @@ const NewEmployee = () =>
                     <label htmlFor="department" className="form-label fs-5">Department</label>
                     <select id="department" className="form-select fs-6" required>
                         <option value="">Select Department</option>
+                        <option value="After Sales">After Sales</option>
+                        <option value="Cleaning">Cleaning</option>
                         <option value="Finance">Finance</option>
                         <option value="Logistics">Logistics</option>
                         <option value="Sales">Sales</option>
-                        <option value="Workshop">Workshop</option>
-                        <option value="After Sales">After Sales</option>
                         <option value="Warehouse">Warehouse</option>
-                        <option value="Cleaning">Cleaning</option>
+                        <option value="Workshop">Workshop</option>  
                     </select>
                 </div>
                 <div className="col-md-6">
