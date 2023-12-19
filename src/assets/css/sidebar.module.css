@@ -1,13 +1,15 @@
 .sideSection
 {
     position: fixed;
-    left: -300px;
+    left: -350px;
     margin-top: -10px;
     color: white;
-    width: 300px;
+    width: 350px;
     height: 100vh;
     background-color: black;
     transition: 0.5s;
+    overflow-y: auto;
+    overscroll-behavior-y: contain;
 }
 .image
 {
