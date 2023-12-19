@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import SideStyles from '../assets/css/sidebar.module.css'
 // import DropdownStyles from '../assets/css/sidedropdowns.module.css'
 import Logo from '../assets/images/Logo.png'
@@ -31,7 +32,7 @@ const Sidebar = ({sidebarOpen}) =>
                         </NavLink>
                     </li>
                     <li className={`dropdown ${SideStyles.dropdown}`}>
-                        <NavLink to="#" onClick={toggleLeaveDropdown} className={SideStyles.navLink}>
+                        <a role='button' onClick={toggleLeaveDropdown} className={SideStyles.navLink}>
                             <div className={SideStyles.sideOption}>
                                 <i className={`fa fa-calendar ${SideStyles.sideIcons}`}></i>
                                 <h3 className={SideStyles.h3}>Leave</h3>
@@ -42,7 +43,7 @@ const Sidebar = ({sidebarOpen}) =>
                                         (<i className={`fa fa-angle-right ${SideStyles.sideIcons} ${SideStyles.dropdownIcon}`}></i>) 
                                 }
                             </div>
-                        </NavLink>
+                        </a>
                         {leaveDropdown && (
                             <ul className={`dropdown-content ${SideStyles.dropdownContent} ${SideStyles.sidebarList}`}>
                                 <li>
@@ -73,7 +74,7 @@ const Sidebar = ({sidebarOpen}) =>
                         </NavLink>
                     </li>
                     <li className="dropdown">
-                        <NavLink to="#" onClick={toggleEmployeeeDropdown} className={SideStyles.navLink}>
+                        <a role='button' onClick={toggleEmployeeeDropdown} className={SideStyles.navLink}>
                             <div className={SideStyles.sideOption}>
                                 <i className={`fa fa-user ${SideStyles.sideIcons}`}></i>
                                 <h3 className={SideStyles.h3}>Employees</h3>
@@ -84,7 +85,7 @@ const Sidebar = ({sidebarOpen}) =>
                                         (<i className={`fa fa-angle-right ${SideStyles.sideIcons} ${SideStyles.dropdownIcon}`}></i>) 
                                 }
                             </div>
-                        </NavLink>
+                        </a>
                         {employeeDropdown && (
                             <ul className={`dropdown-content ${SideStyles.dropdownContent} ${SideStyles.sidebarList}`}>
                                 <li>
