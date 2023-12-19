@@ -1,6 +1,5 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import SideStyles from '../assets/css/sidebar.module.css'
-// import DropdownStyles from '../assets/css/sidedropdowns.module.css'
 import Logo from '../assets/images/Logo.png'
 import { NavLink } from 'react-router-dom';
 import { useState } from 'react';
@@ -13,10 +12,18 @@ const Sidebar = ({sidebarOpen}) =>
     const toggleLeaveDropdown= () =>
     {
         setLeaveDropdown(!leaveDropdown)
+        if(employeeDropdown === true)
+        {
+            setEmployeeDropdown(false)
+        }
     } 
     const toggleEmployeeeDropdown= () =>
     {
         setEmployeeDropdown(!employeeDropdown)
+        if(leaveDropdown === true)
+        {
+            setLeaveDropdown(false)
+        }
     }   
     return(
         <>

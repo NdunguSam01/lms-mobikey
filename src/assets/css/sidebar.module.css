@@ -8,8 +8,6 @@
     height: 100vh;
     background-color: black;
     transition: 0.5s;
-    overflow-y: auto;
-    overscroll-behavior-y: contain;
 }
 .image
 {
@@ -38,7 +36,7 @@
     align-items: center;
     gap: 20px;
     margin-top: 5px;
-    padding: 15px;
+    padding: 12px;
 }
 .sideOption:hover
 {
