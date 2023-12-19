@@ -56,6 +56,22 @@
 {
     left: 0;
 }
+.dropdown
+{
+    transition: .5s;
+}
+.dropdownIcon
+{
+    margin-left: auto;
+}
+.dropdownContent
+{
+    transition-timing-function: ease-in;
+}
+.dropdownContent li
+{
+    margin-left: 15px;
+}
 @media screen and (min-width:320px) and (max-width:425px) 
 {
     .sidenav

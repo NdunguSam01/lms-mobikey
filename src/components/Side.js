@@ -1,5 +1,5 @@
 import SideStyles from '../assets/css/sidebar.module.css'
-import DropdownStyles from '../assets/css/sidedropdowns.module.css'
+// import DropdownStyles from '../assets/css/sidedropdowns.module.css'
 import Logo from '../assets/images/Logo.png'
 import { NavLink } from 'react-router-dom';
 import { useState } from 'react';
@@ -30,21 +30,21 @@ const Sidebar = ({sidebarOpen}) =>
                             </div>
                         </NavLink>
                     </li>
-                    <li className={`dropdown ${DropdownStyles.dropdown}`}>
+                    <li className={`dropdown ${SideStyles.dropdown}`}>
                         <NavLink to="#" onClick={toggleLeaveDropdown} className={SideStyles.navLink}>
                             <div className={SideStyles.sideOption}>
                                 <i className={`fa fa-calendar ${SideStyles.sideIcons}`}></i>
                                 <h3 className={SideStyles.h3}>Leave</h3>
                                 {leaveDropdown 
                                     ? 
-                                        (<i className={`fa fa-angle-down ${SideStyles.sideIcons} ${DropdownStyles.dropdownIcon}`}></i>)
+                                        (<i className={`fa fa-angle-down ${SideStyles.sideIcons} ${SideStyles.dropdownIcon}`}></i>)
                                     : 
-                                        (<i className={`fa fa-angle-right ${SideStyles.sideIcons} ${DropdownStyles.dropdownIcon}`}></i>) 
+                                        (<i className={`fa fa-angle-right ${SideStyles.sideIcons} ${SideStyles.dropdownIcon}`}></i>) 
                                 }
                             </div>
                         </NavLink>
                         {leaveDropdown && (
-                            <ul className={`dropdown-content ${DropdownStyles.dropdownContent} ${SideStyles.sidebarList}`}>
+                            <ul className={`dropdown-content ${SideStyles.dropdownContent} ${SideStyles.sidebarList}`}>
                                 <li>
                                     <NavLink to="/leave-form" className={SideStyles.navLink}>
                                         <div className={SideStyles.sideOption}>
@@ -79,14 +79,14 @@ const Sidebar = ({sidebarOpen}) =>
                                 <h3 className={SideStyles.h3}>Employees</h3>
                                 {employeeDropdown 
                                     ? 
-                                        (<i className={`fa fa-angle-down ${SideStyles.sideIcons} ${DropdownStyles.dropdownIcon}`}></i>) 
+                                        (<i className={`fa fa-angle-down ${SideStyles.sideIcons} ${SideStyles.dropdownIcon}`}></i>) 
                                     : 
-                                        (<i className={`fa fa-angle-right ${SideStyles.sideIcons} ${DropdownStyles.dropdownIcon}`}></i>) 
+                                        (<i className={`fa fa-angle-right ${SideStyles.sideIcons} ${SideStyles.dropdownIcon}`}></i>) 
                                 }
                             </div>
                         </NavLink>
                         {employeeDropdown && (
-                            <ul className={`dropdown-content ${DropdownStyles.dropdownContent} ${SideStyles.sidebarList}`}>
+                            <ul className={`dropdown-content ${SideStyles.dropdownContent} ${SideStyles.sidebarList}`}>
                                 <li>
                                     <NavLink to="/new employee" className={SideStyles.navLink}>
                                         <div className={SideStyles.sideOption}>
