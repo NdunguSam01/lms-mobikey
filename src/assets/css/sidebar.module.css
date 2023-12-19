@@ -76,7 +76,7 @@
 }
 @media screen and (min-width:320px) and (max-width:425px) 
 {
-    .sidenav
+    .sideSection
     {
         width: 250px;
     }
@@ -92,7 +92,7 @@
 }
 @media screen and (min-width:426px) and (max-width:768px) 
 {
-    .sidenav
+    .sideSection
     {
         width: 250px;
     }
