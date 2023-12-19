@@ -9,7 +9,7 @@ const Login = () =>
             <div className={`${FormStyling.parentFlex} ${BackgroundStyling.background}`}>
                 <form action="" className={`row g-4 mx-4 bg-light ${FormStyling.form}`}>
                     <img src={MANImage} alt="MAN Logo" className={FormStyling.image}/>
-                    <h1 className={`my-2 text-center text-uppercase ${FormStyling.h1}`}>Login Form</h1>
+                    <h1 className={`my-2 text-center text-uppercase ${FormStyling.h1}`}>sign in</h1>
                     <div className="col-md-12 mt-2">
                         <label htmlFor="username" className="form-label fs-5">Username</label>
                         <input type="text" className="form-control mt-2" id="username" placeholder="Enter your username" required/>
