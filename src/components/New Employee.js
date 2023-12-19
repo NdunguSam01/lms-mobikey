@@ -2,8 +2,8 @@ const NewEmployee = () =>
 {
     return ( 
         <>
-            <h1 className="text-center text-uppercase">New Employee</h1>
-            <form action="" className="row g-4 m-2">
+            <form action="" className="row g-4 mx-2 mt-1">
+                <h1 className="text-center text-uppercase">New Employee</h1>
                 <div className="col-md-6">
                     <label htmlFor="firstName" className="form-label fs-5">First Name</label>
                     <input type="text"id="firstName" className="form-control fs-6" placeholder="First Name" required/>

@@ -2,8 +2,8 @@ const LeaveForm = () =>
 {
     return ( 
         <>
-            <h1 className="text-center text-uppercase">Leave Request Form</h1>
-            <form action="" className="row g-4 m-2">
+            <form action="" className="row g-4 mx-2 mt-1">
+                <h1 className="text-center text-uppercase">Leave Request Form</h1>
                 <div className="col-md-12">
                     <label htmlFor="availableDays" className="form-label fs-5">Available Leave Days</label>
                     <input type="text" id="availableDays" className="form-control" placeholder="Available Leave Days" readOnly/>
