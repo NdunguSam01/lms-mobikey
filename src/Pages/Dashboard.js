@@ -8,14 +8,14 @@ const Dashboard = () =>
 {
     const [sidebarOpen, setSidebarOpen]=useState(false)
 
-    const openSidebar= () =>
+    const sidebarStatusFunction= () =>
     {
         setSidebarOpen(!sidebarOpen)
     }
     return ( 
         <>
-            <Navbar openSidebar={openSidebar} sidebarOpen={sidebarOpen}/>
-            <Sidebar sidebarOpen={sidebarOpen}/>
+            <Navbar sidebarStatusFunction={sidebarStatusFunction} sidebarOpen={sidebarOpen}/>
+            <Sidebar sidebarOpen={sidebarOpen} sidebarStatusFunction={sidebarStatusFunction}/>
             <div className="content-contaiiner">
                 <Leave/>
                 <Employees/>

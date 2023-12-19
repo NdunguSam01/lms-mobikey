@@ -7,10 +7,10 @@ const Sidebar = ({sidebarOpen}) =>
     
     return(
         <>
-            <aside className={`${SideStyles.sidenav} ${sidebarOpen ? `${SideStyles.open}` : ''}`}>
+            <aside className={`${SideStyles.sideSection} ${sidebarOpen ? `${SideStyles.open}` : ''}`}>
                 <img src={Logo} alt='Mobikey Logo' className={`bg-light ${SideStyles.image}`}/>
-                <ul>
-                <li>
+                <ul className={SideStyles.sidebarList}>
+                    <li>
                         <NavLink to="/dashboard" className={SideStyles.navLink}>
                             <div className={SideStyles.sideOption}>
                                 <i className={`fa fa-home ${SideStyles.sideIcons}`}></i>

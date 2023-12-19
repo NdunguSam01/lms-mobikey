@@ -1,19 +1,34 @@
-.sidenav
+.sideSection
 {
     position: fixed;
-    left: -300px;
     margin-top: 0;
-    height: 100%;
-    width: 300px;
-    background-color: black;
+    left: -300px;
     color: white;
-    overflow-x: hidden;
+    width: 300px;
+    height: 100vh;
+    background-color: black;
     transition: 0.5s;
 }
-.sidenav ul
+.image
 {
-    list-style: none;
+    width: 100%;
+}
+.sidebarList
+{
+    list-style-type: none;
+    margin: 0;
     padding: 0;
+}
+.sidebarList li
+{
+    margin: 0;
+    padding: 0;
+}
+.navLink
+{
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
 }
 .sideOption
 {
@@ -32,28 +47,44 @@
 {
     font-size: 25px;
 }
-.image
-{
-    width: 100%;
-}
-.navLink
-{
-    text-decoration: none;
-    color: inherit;
-}
-.sidenav.open
-{
-    left: 0;
-}
 .h3
 {
     font-size: 1.5em;
     padding-top: 10px;
 }
+.sideSection.open 
+{
+    left: 0;
+}
 @media screen and (min-width:320px) and (max-width:425px) 
 {
-    .sideSection
+    .sidenav
     {
-        width: 270px;
+        width: 250px;
+    }
+    .sideIcon
+    {
+        font-size: 20px;
+        margin: 2px 0px;
+    }
+    .h3
+    {
+        font-size: 1.2em;
+    }
+}
+@media screen and (min-width:426px) and (max-width:768px) 
+{
+    .sidenav
+    {
+        width: 250px;
+    }
+    .sideIcon
+    {
+        font-size: 20px;
+        margin: 2px 0px;
+    }
+    .h3
+    {
+        font-size: 1.2em;
     }
 }
