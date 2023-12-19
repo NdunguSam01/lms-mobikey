@@ -7,11 +7,10 @@ const Sidebar = ({sidebarOpen}) =>
     
     return(
         <>
-            {sidebarOpen && (
-                <aside className={SideStyles.sideSection}>
+            <aside className={`${SideStyles.sidenav} ${sidebarOpen ? `${SideStyles.open}` : ''}`}>
                 <img src={Logo} alt='Mobikey Logo' className={`bg-light ${SideStyles.image}`}/>
-                <ul className={SideStyles.sidebarList}>
-                    <li>
+                <ul>
+                <li>
                         <NavLink to="/dashboard" className={SideStyles.navLink}>
                             <div className={SideStyles.sideOption}>
                                 <i className={`fa fa-home ${SideStyles.sideIcons}`}></i>
@@ -45,7 +44,6 @@ const Sidebar = ({sidebarOpen}) =>
                     </li>
                 </ul>
             </aside>
-            )}
         </>
     )
 }

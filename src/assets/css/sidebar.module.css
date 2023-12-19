@@ -1,20 +1,18 @@
-.sideSection
+.sidenav
 {
+    position: fixed;
+    left: -300px;
     margin-top: 0;
-    color: white;
+    height: 100%;
     width: 300px;
-    height: calc(100vh - 60px);
     background-color: black;
+    color: white;
+    overflow-x: hidden;
+    transition: 0.5s;
 }
-.sidebarList
+.sidenav ul
 {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-.sidebarList li
-{
-    margin: 0;
+    list-style: none;
     padding: 0;
 }
 .sideOption
@@ -43,9 +41,9 @@
     text-decoration: none;
     color: inherit;
 }
-.dropdownContent li
+.sidenav.open
 {
-    margin-left: 20px;
+    left: 0;
 }
 .h3
 {
