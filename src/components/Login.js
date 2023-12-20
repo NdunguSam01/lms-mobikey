@@ -28,7 +28,10 @@ const Login = () =>
     const handleLogin = e =>
     {
         e.preventDefault()
-        navigate("/dashboard")
+        setTimeout(()=>
+        {
+            navigate("/dashboard")
+        },2000)
     }
     
     return ( 
