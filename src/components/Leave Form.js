@@ -43,9 +43,10 @@ const LeaveForm = () =>
                 <div className="col-md-12">
                     <label htmlFor="leaveType" className="form-label fs-5">Leave Type</label>
                     <select id="leaveType" className="form-select" value={leaveFormData.leaveType} onChange={handleInputChange} required>
+                        <option value="">Select Leave Type</option>
                         <option value="normal">Normal Leave</option>
-                        <option value="paternity">Paternity Leave</option>
                         <option value="sick">Sick Leave</option>
+                        <option value="paternity">Paternity Leave</option>
                         <option value="maternity">Maternity Leave</option>
                     </select>
                 </div>
