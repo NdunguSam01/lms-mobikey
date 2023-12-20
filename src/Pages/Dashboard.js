@@ -13,14 +13,16 @@ const Dashboard = () =>
     {
         setSidebarOpen(!sidebarOpen)
     }
+    const mainContainerClick= () => sidebarOpen && setSidebarOpen(false)
+
     return ( 
         <>
             <Navbar sidebarStatusFunction={sidebarStatusFunction} sidebarOpen={sidebarOpen}/>
             <Sidebar sidebarOpen={sidebarOpen} sidebarStatusFunction={sidebarStatusFunction}/>
-            <div className={DashboardStyling.mainContainer}>
+            <main className={DashboardStyling.mainContainer} onClick={mainContainerClick}>
                 <LeaveForm/>
                 <NewEmployee/>
-            </div>
+            </main>
         </>
      );
 }
