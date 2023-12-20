@@ -52,8 +52,8 @@ const NewEmployee = () =>
                         <option value="">Select Role</option>
                         <option value="User">User</option>
                         <option value="HOD">Head of Department</option>
-                        <option value="GM">General Manager</option>
                         <option value="HR">Human Resource Manager</option>
+                        <option value="GM">General Manager</option>
                     </select>
                 </div>
                 <div className="col-md-12 text-center">
