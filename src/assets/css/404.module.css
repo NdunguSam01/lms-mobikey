@@ -1,0 +1,24 @@
+.errorMessage
+{
+    margin: 40px auto;
+    width: 90%;
+    text-align: center;
+}
+.errorMessage h1
+{
+    text-transform: uppercase;
+    font-weight: bolder;
+    margin: 10px;
+}
+.errorMessage p
+{
+    font-weight: 800;
+    font-size: 1.3em;
+    margin: 10px auto;
+    width: 50%;
+}
+.errorMessage a
+{
+    margin: 20px;
+    border-radius: 10px;
+}

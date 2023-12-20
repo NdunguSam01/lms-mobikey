@@ -64,7 +64,7 @@ const Sidebar = ({sidebarOpen}) =>
                                 <li>
                                     <NavLink to="/leave-history" className={SideStyles.navLink}>
                                         <div className={SideStyles.sideOption}>
-                                            <i className={`fa fa-history ${SideStyles.sideIcons}`}></i>
+                                            <i className={`fa fa-table ${SideStyles.sideIcons}`}></i>
                                             <h3 className={SideStyles.h3}>Leave History</h3>
                                         </div>
                                     </NavLink>
