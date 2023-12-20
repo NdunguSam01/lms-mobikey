@@ -96,7 +96,7 @@ const Sidebar = ({sidebarOpen}) =>
                         {employeeDropdown && (
                             <ul className={`dropdown-content ${SideStyles.dropdownContent} ${SideStyles.sidebarList}`}>
                                 <li>
-                                    <NavLink to="/new employee" className={SideStyles.navLink}>
+                                    <NavLink to="/new-employee" className={SideStyles.navLink}>
                                         <div className={SideStyles.sideOption}>
                                             <i className={`fa fa-user-plus ${SideStyles.sideIcons}`}></i>
                                             <h3 className={SideStyles.h3}>New Employee</h3>
@@ -104,7 +104,7 @@ const Sidebar = ({sidebarOpen}) =>
                                     </NavLink>
                                 </li>
                                 <li>
-                                    <NavLink to="/view employees" className={SideStyles.navLink}>
+                                    <NavLink to="/view-employees" className={SideStyles.navLink}>
                                         <div className={SideStyles.sideOption}>
                                             <i className={`fa fa-users ${SideStyles.sideIcons}`}></i>
                                             <h3 className={SideStyles.h3}>View Employees</h3>

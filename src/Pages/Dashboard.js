@@ -1,9 +1,12 @@
 import Navbar from '../components/Navbar'
 import Sidebar from '../components/Side';
-import { useState } from 'react';
-import LeaveForm from '../components/Leave Form'
-import NewEmployee from '../components/New Employee'
+import LeaveForm from './Leave Form'
+import LeaveHistory from './Leave History';
+import PendingRequests from './Pending Requests'
+import NewEmployee from './New Employee'
+import ViewEmployees from './View Employees';
 import DashboardStyling from '../assets/css/dashboard.module.css'
+import { useState } from 'react';
 
 const Dashboard = () => 
 {
@@ -13,7 +16,7 @@ const Dashboard = () =>
     {
         setSidebarOpen(!sidebarOpen)
     }
-    const mainContainerClick= () => sidebarOpen && setSidebarOpen(false)
+    const mainContainerClick= () => console.log("main container clicked")
 
     return ( 
         <>
@@ -21,7 +24,10 @@ const Dashboard = () =>
             <Sidebar sidebarOpen={sidebarOpen} sidebarStatusFunction={sidebarStatusFunction}/>
             <main className={DashboardStyling.mainContainer} onClick={mainContainerClick}>
                 <LeaveForm/>
+                <LeaveHistory/>
+                <PendingRequests/>
                 <NewEmployee/>
+                <ViewEmployees/>
             </main>
         </>
      );
