@@ -1,22 +1,49 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import MANImage from '../assets/images/Logo.png'
 import BackgroundStyling from '../assets/css/landing.module.css'
 import FormStyling from '../assets/css/login.module.css'
+import { useState } from "react";
+
 const Login = () => 
 {
+    const navigate=useNavigate()
+    const [loginFormData, setLoginFormData]=useState(
+        {
+            username: "",
+            password: ""
+        })
+
+    const handleInputChange= e =>
+    {
+        const key=e.target.id
+        const value=e.target.value
+    
+        setLoginFormData(
+            {
+                ...loginFormData,
+                [key]: value
+            })
+    }
+
+    const handleLogin = e =>
+    {
+        e.preventDefault()
+        navigate("/dashboard")
+    }
+    
     return ( 
         <>
             <div className={`${FormStyling.parentFlex} ${BackgroundStyling.background}`}>
-                <form action="" className={`row g-4 mx-4 bg-light ${FormStyling.form}`}>
+                <form onSubmit={handleLogin} className={`row g-4 mx-4 bg-light ${FormStyling.form}`}>
                     <img src={MANImage} alt="MAN Logo" className={FormStyling.image}/>
                     <h1 className={`my-2 text-center text-uppercase ${FormStyling.h1}`}>sign in</h1>
                     <div className="col-md-12 mt-2">
                         <label htmlFor="username" className="form-label fs-5">Username</label>
-                        <input type="text" className="form-control mt-2" id="username" placeholder="Enter your username" required/>
+                        <input type="text" className="form-control mt-2" id="username" placeholder="Enter your username" value={loginFormData.username} onChange={handleInputChange} required/>
                     </div>
                     <div className="col-md-12 mt-2">
                         <label htmlFor="password" className="form-label fs-5">Password</label>
-                        <input type="password" className="form-control mt-2" id="password" placeholder="Enter your password" required/>
+                        <input type="password" className="form-control mt-2" id="password" placeholder="Enter your password" value={loginFormData.password} onChange={handleInputChange} required/>
                     </div>
                     <div className={FormStyling.childFlex}>
                         <button type="submit" className="btn btn-success text-center mt-1">Login</button>
@@ -25,13 +52,10 @@ const Login = () =>
                     <div className="container">
                         <NavLink to="/forgot" className="col-12 btn btn-danger my-3">Forgot password?</NavLink>
                     </div>
-                    <div className="container">
-                        <NavLink to="/dashboard" className="col-12 btn btn-success my-2">Dashboard</NavLink>
-                    </div>
                 </form> 
             </div>
         </>
-     );
+    );
 }
  
 export default Login;
