@@ -1,5 +1,5 @@
 import ErrorImage from '../assets/images/Error.png'
-import Styling from '../assets/css/404.module.css'
+import Styling from '../assets/css/error.module.css'
 import { NavLink } from 'react-router-dom';
 const PageNotFound = () => 
 {
