@@ -2,7 +2,7 @@ const ViewEmployees = () =>
 {
     return ( 
         <>
-            <h1>All employees</h1>
+            <h1 className="text-uppercase text-center mt-4">All employees</h1>
             <table className="table table-striped table-bordered">
                 <thead>
                     <tr>

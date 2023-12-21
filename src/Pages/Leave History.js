@@ -2,7 +2,7 @@ const LeaveHistory = () =>
 {
     return ( 
         <>
-            <h1>Leave History Page</h1>
+            <h1 className="text-uppercase text-center mt-4">Leave History Page</h1>
             <table className="table table-striped table-bordered">
                 <thead>
                     <tr>

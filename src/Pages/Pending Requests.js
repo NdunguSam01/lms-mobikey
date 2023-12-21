@@ -2,7 +2,7 @@ const PendingRequests = () =>
 {
     return ( 
         <>
-            <h1>Pending Requests page</h1>
+            <h1 className="text-uppercase text-center mt-4">Pending Requests page</h1>
             <table className="table table-striped table-bordered">
                 <thead>
                     <tr>

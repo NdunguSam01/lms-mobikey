@@ -28,7 +28,7 @@ const NewEmployee = () =>
 
     return ( 
         <>
-            <form action="" className="row g-4 mx-2 mt-1">
+            <form action="" className="row g-3 mx-2 mt-1">
                 <h1 className="text-center text-uppercase">New Employee</h1>
                 <div className="col-md-6">
                     <label htmlFor="firstName" className="form-label fs-5">First Name</label>
@@ -83,7 +83,7 @@ const NewEmployee = () =>
                     </select>
                 </div>
                 <div className="col-md-12 text-center">
-                    <button type="submit" className="btn btn-success mt-4 fs-6">Add employee</button>
+                    <button type="submit" className="btn btn-success mt-2 fs-6">Add employee</button>
                 </div>
             </form>
         </>
