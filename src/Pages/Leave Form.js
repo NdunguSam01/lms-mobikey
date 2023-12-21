@@ -34,7 +34,7 @@ const LeaveForm = () =>
     
     return ( 
         <>
-            <form action="" className="row g-4 mx-2 mt-1">
+            <form action="" className="row g-3 mx-5">
                 <h1 className="text-center text-uppercase">Leave Request Form</h1>
                 <div className="col-md-12">
                     <label htmlFor="availableDays" className="form-label fs-5">Available Leave Days</label>
