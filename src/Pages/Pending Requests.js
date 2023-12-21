@@ -13,9 +13,7 @@ const PendingRequests = () =>
                         <th scope="col">End Date</th>
                         <th scope="col">Number of days</th>
                         <th scope="col">File Attachment</th>
-                        <th scope="col">Direct Control</th>
-                        <th scope="col">General Manager</th>
-                        <th scope="col">Human Resources</th>
+                        <th scope="col" colSpan={2} className="text-center">Action</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -27,9 +25,8 @@ const PendingRequests = () =>
                         <td data-label="End Date">2023-12-15</td>
                         <td data-label="Number of days">5</td>
                         <td data-label="File Attachment">NULL</td>
-                        <td data-label="HOD">Pending</td>
-                        <td data-label="General Manager">Pending</td>
-                        <td data-label="Human Resources">Pending</td>
+                        <td><button className="btn btn-success">Approve</button></td>
+                        <td><button className="btn btn-danger">Reject</button></td>
                     </tr>
                     <tr>
                         <td data-label="First Name">Samuel</td>
@@ -39,9 +36,8 @@ const PendingRequests = () =>
                         <td data-label="End Date">2023-12-15</td>
                         <td data-label="Number of days">5</td>
                         <td data-label="File Type">NULL</td>
-                        <td data-label="HOD">Pending</td>
-                        <td data-label="General Manager">Pending</td>
-                        <td data-label="Human Resources">Pending</td>
+                        <td><button className="btn btn-success">Approve</button></td>
+                        <td><button className="btn btn-danger">Reject</button></td>
                     </tr>
                 </tbody>
             </table>
