@@ -12,6 +12,7 @@ const ViewEmployees = () =>
                         <th scope="col">Department</th>
                         <th scope="col">Position</th>
                         <th scope="col">Start Date</th>
+                        <th scope="col">Action</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -22,6 +23,7 @@ const ViewEmployees = () =>
                         <td data-label="Department">Logistics</td>
                         <td data-label="Position">Logistics Assistant</td>
                         <td data-label="Start Date">2023-12-09</td>
+                        <td><button className="btn btn-danger">Disable account</button></td>
                     </tr>
                     <tr>
                         <td data-label="First Name">Kennedy</td>
@@ -30,6 +32,7 @@ const ViewEmployees = () =>
                         <td data-label="Department">Fiance</td>
                         <td data-label="Position">Finance Director</td>
                         <td data-label="Start Date">2023-02-02</td>
+                        <td><button className="btn btn-danger">Disable account</button></td>
                     </tr>
                 </tbody>
             </table>
