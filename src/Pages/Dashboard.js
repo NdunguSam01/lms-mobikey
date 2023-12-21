@@ -16,7 +16,7 @@ const Dashboard = () =>
     {
         setSidebarOpen(!sidebarOpen)
     }
-    const mainContainerClick= () => console.log("main container clicked")
+    const mainContainerClick= () => sidebarOpen && setSidebarOpen(false)
 
     return ( 
         <>
