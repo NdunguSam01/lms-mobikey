@@ -3,6 +3,7 @@ import Sidebar from '../components/Side';
 import LeaveForm from './Leave Form'
 import LeaveHistory from './Leave History';
 import PendingRequests from './Pending Requests'
+import Profile from './Profile';
 import NewEmployee from './New Employee'
 import ViewEmployees from './View Employees';
 import DashboardStyling from '../assets/css/dashboard.module.css'
@@ -28,6 +29,7 @@ const Dashboard = () =>
                 <PendingRequests/>
                 <NewEmployee/>
                 <ViewEmployees/>
+                <Profile/>
             </main>
         </>
      );
