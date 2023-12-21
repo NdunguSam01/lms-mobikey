@@ -3,6 +3,9 @@ import MANImage from '../assets/images/Logo.png'
 import BackgroundStyling from '../assets/css/landing.module.css'
 import FormStyling from '../assets/css/login.module.css'
 import { useState } from "react";
+import { toast, ToastContainer } from 'react-toastify';
+import "react-toastify/dist/ReactToastify.css";
+import '../assets/css/toast.css'
 
 const Login = () => 
 {
@@ -28,15 +31,23 @@ const Login = () =>
     const handleLogin = e =>
     {
         e.preventDefault()
+
+        toast.success("Sign In successful!",
+        {
+        position: toast.POSITION.TOP_RIGHT
+        })
+
         setTimeout(()=>
         {
+            
             navigate("/dashboard")
-        },2000)
+        },3000)
     }
-    
     return ( 
         <>
+        
             <div className={`${FormStyling.parentFlex} ${BackgroundStyling.background}`}>
+                <ToastContainer autoClose={2000} className="mx-1"/>
                 <form onSubmit={handleLogin} className={`row g-4 mx-4 bg-light ${FormStyling.form}`}>
                     <img src={MANImage} alt="MAN Logo" className={FormStyling.image}/>
                     <h1 className={`my-2 text-center text-uppercase ${FormStyling.h1}`}>sign in</h1>
