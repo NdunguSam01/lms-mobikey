@@ -9,10 +9,10 @@ function App() {
   return (
     <>
       <Routes>
-        <Route path='/' element={<LandingPage/>}></Route>
-        <Route path='/login' element={<Login/>}></Route>
-        <Route path='/dashboard' element={<Dashboard/>}></Route>
-        <Route path='*' element={<PageNotFound/>}></Route>
+        <Route exact path='/' element={<LandingPage/>}></Route>
+        <Route exact path='/login' element={<Login/>}></Route>
+        <Route exact path='/dashboard' element={<Dashboard/>}></Route>
+        <Route exact path='*' element={<PageNotFound/>}></Route>
       </Routes>
     </>
   );
