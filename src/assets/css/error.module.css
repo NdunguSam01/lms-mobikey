@@ -22,10 +22,21 @@
     margin: 20px;
     border-radius: 10px;
 }
-@media screen and (min-width:320px) and (max-width:768px)
+@media screen and (min-width:320px) and (max-width:425px)
 {
     .errorMessage img
     {
-        width: 60%;
+        width: 70%;
+    }
+    .errorMessage p
+    {
+        font-size: 1.1em;
+    }
+}
+@media screen and (min-width:1023px)
+{
+    .errorMessage p
+    {
+        font-size: 1.5em;
     }
 }
