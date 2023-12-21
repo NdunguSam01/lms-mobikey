@@ -7,6 +7,7 @@ import Profile from './Profile';
 import NewEmployee from './New Employee'
 import ViewEmployees from './View Employees';
 import DashboardStyling from '../assets/css/dashboard.module.css'
+import '../assets/css/table.css'
 import { useState } from 'react';
 
 const Dashboard = () => 

@@ -1,4 +1,3 @@
-import '../assets/css/table.css'
 const LeaveHistory = () => 
 {
     return ( 
