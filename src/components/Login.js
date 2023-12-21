@@ -41,7 +41,7 @@ const Login = () =>
         {
             
             navigate("/dashboard")
-        },3000)
+        },2600)
     }
     return ( 
         <>
