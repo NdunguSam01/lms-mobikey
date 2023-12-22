@@ -34,12 +34,11 @@ const Login = () =>
 
         toast.success("Sign In successful!",
         {
-        position: toast.POSITION.TOP_RIGHT
+        position: toast.POSITION.TOP_RIGHT,
         })
 
         setTimeout(()=>
         {
-            
             navigate("/dashboard")
         },2600)
     }
@@ -47,7 +46,7 @@ const Login = () =>
         <>
         
             <div className={`${FormStyling.parentFlex} ${BackgroundStyling.background}`}>
-                <ToastContainer autoClose={2000} className="mx-1"/>
+                <ToastContainer autoClose={2000} className="mx-1" pauseOnHover={false}/>
                 <form onSubmit={handleLogin} className={`row g-4 mx-4 bg-light ${FormStyling.form}`}>
                     <img src={MANImage} alt="MAN Logo" className={FormStyling.image}/>
                     <h1 className={`my-2 text-center text-uppercase ${FormStyling.h1}`}>sign in</h1>
