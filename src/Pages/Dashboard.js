@@ -25,11 +25,11 @@ const Dashboard = () =>
             <Navbar sidebarStatusFunction={sidebarStatusFunction} sidebarOpen={sidebarOpen}/>
             <Sidebar sidebarOpen={sidebarOpen} sidebarStatusFunction={sidebarStatusFunction}/>
             <main className={DashboardStyling.mainContainer} onClick={mainContainerClick}>
-                {/* <LeaveForm/>
+                <LeaveForm/>
                 <LeaveHistory/>
                 <PendingRequests/>
                 <NewEmployee/>
-                <ViewEmployees/> */}
+                <ViewEmployees/>
                 <Profile/>
             </main>
         </>
