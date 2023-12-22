@@ -1,5 +1,5 @@
-import Navbar from '../components/Navbar'
-import Sidebar from '../components/Side';
+import Navbar from '../Dashboard components/Navbar'
+import Sidebar from '../Dashboard components/Side';
 import LeaveForm from './Leave Form'
 import LeaveHistory from './Leave History';
 import PendingRequests from './Pending Requests'

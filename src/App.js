@@ -1,9 +1,9 @@
 import './App.css';
 import { Routes, Route } from 'react-router';
-import LandingPage from './components/Landing Page';
-import Login from './components/Login';
-import PageNotFound from './components/PageNotFound';
-import Dashboard from './Pages/Dashboard';
+import LandingPage from './Landing Page components/Landing Page';
+import Login from './Landing Page components/Login';
+import PageNotFound from './Dashboard components/PageNotFound';
+import Dashboard from './Dashboard Pages/Dashboard';
 
 function App() {
   return (
