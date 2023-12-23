@@ -7,35 +7,35 @@ const Profile = () =>
                 <h2 className="text-uppercase">General information</h2>
                 <div className="col-md-6">
                     <label htmlFor="firstName" className="form-label fs-6">First Name</label>
-                    <input type="text" name="firstName" id="" className="form-control fs-6" readOnly/>
+                    <input type="text" name="firstName" className="form-control fs-6" readOnly/>
                 </div>
                 <div className="col-md-6">
                     <label htmlFor="lastName" className="form-label fs-6">Last Name</label>
-                    <input type="text" name="firstName" id="" className="form-control fs-6" readOnly/>
+                    <input type="text" name="lastName" id="lastName" className="form-control fs-6" readOnly/>
                 </div>
                 <div className="col-md-6">
                     <label htmlFor="email" className="form-label fs-6">Email address</label>
-                    <input type="text" name="email" id="" className="form-control fs-6" readOnly/>
+                    <input type="text" name="email" id="email" className="form-control fs-6" readOnly/>
                 </div>
                 <div className="col-md-6">
                     <label htmlFor="department" className="form-label fs-6">Department</label>
-                    <input type="text" name="department" id="" className="form-control fs-6" readOnly/>
+                    <input type="text" name="department" id="department" className="form-control fs-6" readOnly/>
                 </div>
                 <div className="col-md-6">
                     <label htmlFor="section" className="form-label fs-6">Section</label>
-                    <input type="text" name="section" id="" className="form-control fs-6" readOnly/>
+                    <input type="text" name="section" id="section" className="form-control fs-6" readOnly/>
                 </div>
                 <div className="col-md-6">
                     <label htmlFor="position" className="form-label fs-6">Position</label>
-                    <input type="text" name="position" className="form-control fs-6" readOnly/>
+                    <input type="text" name="position" id="position" className="form-control fs-6" readOnly/>
                 </div>
                 <div className="col-md-6">
-                    <label htmlFor="startDate" className="form-label fs-6">Hired Date</label>
-                    <input type="text" name="startDate" id="" className="form-control fs-6" readOnly/>
+                    <label htmlFor="employmentDate" className="form-label fs-6">Hired Date</label>
+                    <input type="text" name="employmentDate" id="employmentDate" className="form-control fs-6" readOnly/>
                 </div>
                 <div className="col-md-6">
                     <label htmlFor="role" className="form-label fs-6">Role</label>
-                    <input type="text" name="role" id="" className="form-control fs-6" readOnly/>
+                    <input type="text" name="role" id="role" className="form-control fs-6" readOnly/>
                 </div>
             </section>
             <form action="" className="row g-2 mt-3">

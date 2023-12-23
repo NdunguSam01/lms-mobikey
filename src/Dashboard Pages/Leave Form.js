@@ -7,13 +7,13 @@ const LeaveForm = () =>
     const month=d.getMonth() + 1
     const date=d.getDate()
 
-    const minDateRange=`${currentYear}-${month}-${date}`
+    let minDateRange=`${currentYear}-${month}-${date}`
     const maxDateRange=currentYear + "-12-31"
 
     const [leaveFormData, setLeaveFormData]=useState(
         {
             leaveType: "",
-            startDate: "",
+            leaveStartDate: "",
             endDate: "",
             numDays: "",
             fileAttachment: "",
@@ -30,6 +30,22 @@ const LeaveForm = () =>
                 ...leaveFormData,
                 [key]: value
             })
+
+        if(key === "leaveStartDate")
+        {
+            minDateRange=leaveFormData.leaveStartDate
+        }
+    }
+
+    let fileRequired=""
+
+    if (leaveFormData.leaveType === "sick" || leaveFormData.leaveType === "paternity")
+    {
+        fileRequired="required"
+    }
+    else
+    {
+        fileRequired=""
     }
     
     return ( 
@@ -51,12 +67,12 @@ const LeaveForm = () =>
                     </select>
                 </div>
                 <div className="col-md-4">
-                    <label htmlFor="startDate" className="form-label fs-5">Start Date</label>
-                    <input type="date" id="startDate" min={minDateRange} max={maxDateRange} className="form-control" value={leaveFormData.startDate} onChange={handleInputChange} required/>
+                    <label htmlFor="leaveStartDate" className="form-label fs-5">Start Date</label>
+                    <input type="date" id="leaveStartDate" min={minDateRange} max={maxDateRange} className="form-control" value={leaveFormData.startDate} onChange={handleInputChange} required/>
                 </div>
                 <div className="col-md-4">
                     <label htmlFor="endDate" className="form-label fs-5">End Date</label>
-                    <input type="date" id="endDate" min={minDateRange} max={maxDateRange} className="form-control" value={leaveFormData.endDate} onChange={handleInputChange} required/>
+                    <input type="date" id="endDate" min={leaveFormData.leaveStartDate} max={maxDateRange} className="form-control" value={leaveFormData.endDate} onChange={handleInputChange} required/>
                 </div>
                 <div className="col-md-4">
                     <label htmlFor="numDays" className="form-label fs-5">Number of days</label>
@@ -64,7 +80,7 @@ const LeaveForm = () =>
                 </div>
                 <div className="col-md-6">
                     <label htmlFor="fileAttachment" className="form-label fs-5">Attach file</label>
-                    <input type="file" id="fileAttachment" className="form-control" accept="image/*, application/pdf" value={leaveFormData.fileAttachment} onChange={handleInputChange} required/>
+                    <input type="file" id="fileAttachment" className="form-control" accept="image/*, application/pdf" value={leaveFormData.fileAttachment} onChange={handleInputChange} required={fileRequired}/>
                 </div>
                 <div className="col-md-6">
                     <label htmlFor="reason" className="form-label fs-5">Reason for leave</label>

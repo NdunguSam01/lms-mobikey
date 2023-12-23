@@ -6,12 +6,12 @@
 .form
 {
     height: max-content;
-    width: 450px;
+    width: 400px;
     margin-top: 80px;
 }
 .h1
 {
-    font-weight: bold;
+    font-weight: 500;
 }
 .image
 {
@@ -20,7 +20,7 @@
 }
 .childFlex button, .childFlex a
 {
-    width: 44%;
+    width: 43%;
 }
 @media screen and (min-width: 320px) and (max-width: 374px) 
 {
