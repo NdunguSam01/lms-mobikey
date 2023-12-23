@@ -1,16 +1,76 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { BrowserRouter } from 'react-router-dom';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import LandingPage from './Landing Page/Landing Page';
+import Login from './Landing Page/Login';
+import ForgotPassword from './Landing Page/Forgot';
+import Layout from './Dashboard Components/Layout';
+import PageNotFound from './PageNotFound'
+import LeaveForm from './Dashboard Pages/Leave Form'
+import LeaveHistory from './Dashboard Pages/Leave History'
+import Pending from './Dashboard Pages/Pending Requests'
+import NewEmployee from './Dashboard Pages/New Employee'
+import ViewEmployees from './Dashboard Pages/View Employees'
+import Profile from './Dashboard Pages/Profile'
+
+const router=createBrowserRouter(
+  [
+    {
+      path: "/",
+      element: <LandingPage/>,
+    },
+    {
+      path: "login",
+      element: <Login/>
+    },
+    {
+      path: "forgot",
+      element: <ForgotPassword/>
+    },
+    {
+      path: "dashboard",
+      element: <Layout />,
+      children: 
+      [
+        { 
+          path: "leave-form",
+          element: <LeaveForm /> 
+        },
+        { 
+          path: "leave-history", 
+          element: <LeaveHistory />
+        },
+        {
+          path: "pending",
+          element: <Pending/>
+        },
+        {
+          path: "new-employee",
+          element: <NewEmployee/>
+        },
+        {
+          path: "view-employees",
+          element: <ViewEmployees/>
+        },
+        {
+          path: "profile",
+          element: <Profile/>
+        }
+      ],
+    },
+    {
+      path: "*",
+      element: <PageNotFound/>
+    }
+  ]
+)
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
-      <App />
-    </BrowserRouter>
+    <RouterProvider router={router}/>
   </React.StrictMode>
 );
 

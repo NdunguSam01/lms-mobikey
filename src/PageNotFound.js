@@ -1,5 +1,5 @@
-import ErrorImage from '../assets/images/Error.png'
-import Styling from '../assets/css/error.module.css'
+import ErrorImage from './assets/images/Error.png'
+import Styling from './assets/css/error.module.css'
 import { useNavigate  } from 'react-router-dom';
 const PageNotFound = () => 
 {

@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import styles from '../assets/css/navbar.module.css'
 
 const Navbar = ({sidebarStatusFunction, sidebarOpen}) => 
@@ -13,8 +13,8 @@ const Navbar = ({sidebarStatusFunction, sidebarOpen}) =>
                     <i className={`fa fa-bars ${styles.icon}`} onClick={sidebarStatusFunction}></i>
                 }
                 <span className={styles.navLinks}>
-                    <NavLink to="/profile" className={styles.link}>Profile</NavLink>
-                    <NavLink to="/login" className={styles.link}>Sign Out</NavLink>
+                    <Link to="/dashboard/profile" className={styles.link}>Profile</Link>
+                    <Link to="/login" className={styles.link}>Sign Out</Link>
                 </span>
             </nav>
         </>

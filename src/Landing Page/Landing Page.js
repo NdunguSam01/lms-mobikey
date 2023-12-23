@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import LinkStyles from '../assets/css/landing.module.css'
 
 const LandingPage = () => 
@@ -6,7 +6,7 @@ const LandingPage = () =>
     return (  
         <div className={`${LinkStyles.background}`}>
             <nav className={LinkStyles.navbar}>
-                <NavLink to="/login" className={LinkStyles.navLink}>Login</NavLink>
+                <Link to="/login" className={LinkStyles.navLink}>Login</Link>
             </nav>
             <div className={LinkStyles.message}>
                 <h2>Mobikey Truck and Bus Limited</h2>

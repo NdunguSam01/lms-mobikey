@@ -1,7 +1,7 @@
-import { NavLink, useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import MANImage from '../assets/images/Logo.png'
 import BackgroundStyling from '../assets/css/landing.module.css'
-import FormStyling from '../assets/css/login.module.css'
+import FormStyling from "../assets/css/login.module.css"
 import { useState } from "react";
 import { toast, ToastContainer } from 'react-toastify';
 import "react-toastify/dist/ReactToastify.css";
@@ -60,10 +60,10 @@ const Login = () =>
                     </div>
                     <div className={FormStyling.childFlex}>
                         <button type="submit" className="btn btn-success text-center mt-1">Login</button>
-                        <NavLink to="/" className="btn btn-danger mt-1 ms-5">Back</NavLink>
+                        <Link to="/" className="btn btn-danger mt-1 ms-5">Back</Link>
                     </div>
                     <div className="container">
-                        <NavLink to="/forgot" className="col-12 btn btn-danger my-3">Forgot password?</NavLink>
+                        <Link to="/forgot" className="col-12 btn btn-danger my-3">Forgot password?</Link>
                     </div>
                 </form> 
             </div>

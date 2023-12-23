@@ -54,7 +54,7 @@ const Sidebar = ({sidebarOpen}) =>
                         {leaveDropdown && (
                             <ul className={`dropdown-content ${SideStyles.dropdownContent} ${SideStyles.sidebarList}`}>
                                 <li>
-                                    <NavLink to="/leave-form" className={SideStyles.navLink}>
+                                    <NavLink to="/dashboard/leave-form" className={SideStyles.navLink}>
                                         <div className={SideStyles.sideOption}>
                                             <i className={`fa fa-calendar-plus-o ${SideStyles.sideIcons}`}></i>
                                             <h3 className={SideStyles.h3}>Apply Leave</h3>
@@ -62,7 +62,7 @@ const Sidebar = ({sidebarOpen}) =>
                                     </NavLink>
                                 </li>
                                 <li>
-                                    <NavLink to="/leave-history" className={SideStyles.navLink}>
+                                    <NavLink to="/dashboard/leave-history" className={SideStyles.navLink}>
                                         <div className={SideStyles.sideOption}>
                                             <i className={`fa fa-table ${SideStyles.sideIcons}`}></i>
                                             <h3 className={SideStyles.h3}>Leave History</h3>
@@ -73,7 +73,7 @@ const Sidebar = ({sidebarOpen}) =>
                         )}
                     </li>
                     <li>
-                        <NavLink to="/pending" className={SideStyles.navLink}>
+                        <NavLink to="/dashboard/pending" className={SideStyles.navLink}>
                             <div className={SideStyles.sideOption}>
                                 <i className={`fa fa-clock-o ${SideStyles.sideIcons}`}></i>
                                 <h3 className={SideStyles.h3}>Employee Requests</h3>
@@ -96,7 +96,7 @@ const Sidebar = ({sidebarOpen}) =>
                         {employeeDropdown && (
                             <ul className={`dropdown-content ${SideStyles.dropdownContent} ${SideStyles.sidebarList}`}>
                                 <li>
-                                    <NavLink to="/new-employee" className={SideStyles.navLink}>
+                                    <NavLink to="/dashboard/new-employee" className={SideStyles.navLink}>
                                         <div className={SideStyles.sideOption}>
                                             <i className={`fa fa-user-plus ${SideStyles.sideIcons}`}></i>
                                             <h3 className={SideStyles.h3}>New Employee</h3>
@@ -104,7 +104,7 @@ const Sidebar = ({sidebarOpen}) =>
                                     </NavLink>
                                 </li>
                                 <li>
-                                    <NavLink to="/view-employees" className={SideStyles.navLink}>
+                                    <NavLink to="/dashboard/view-employees" className={SideStyles.navLink}>
                                         <div className={SideStyles.sideOption}>
                                             <i className={`fa fa-users ${SideStyles.sideIcons}`}></i>
                                             <h3 className={SideStyles.h3}>View Employees</h3>
