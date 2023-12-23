@@ -39,7 +39,7 @@ const Login = () =>
 
         setTimeout(()=>
         {
-            navigate("/dashboard")
+            navigate("/dashboard/statistics")
         },2600)
     }
     return ( 

@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
+import './assets/css/index.css';
 import reportWebVitals from './reportWebVitals';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import LandingPage from './Landing Page/Landing Page';
@@ -14,6 +14,7 @@ import Pending from './Dashboard Pages/Pending Requests'
 import NewEmployee from './Dashboard Pages/New Employee'
 import ViewEmployees from './Dashboard Pages/View Employees'
 import Profile from './Dashboard Pages/Profile'
+import Statistics from './Dashboard Pages/Statistics';
 
 const router=createBrowserRouter(
   [
@@ -34,6 +35,10 @@ const router=createBrowserRouter(
       element: <Layout />,
       children: 
       [
+        {
+          path: "statistics",
+          element: <Statistics/>
+        },
         { 
           path: "leave-form",
           element: <LeaveForm /> 

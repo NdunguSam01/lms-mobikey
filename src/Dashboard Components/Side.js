@@ -31,7 +31,7 @@ const Sidebar = ({sidebarOpen}) =>
                 <img src={Logo} alt='Mobikey Logo' className={`bg-light ${SideStyles.image}`}/>
                 <ul className={SideStyles.sidebarList}>
                     <li>
-                        <NavLink to="/dashboard" className={SideStyles.navLink}>
+                        <NavLink to="/dashboard/statistics" className={SideStyles.navLink}>
                             <div className={SideStyles.sideOption}>
                                 <i className={`fa fa-home ${SideStyles.sideIcons}`}></i>
                                 <h3 className={SideStyles.h3}>Dashboard</h3>
