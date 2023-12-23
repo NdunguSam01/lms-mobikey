@@ -1,5 +1,6 @@
 import Navbar from './Navbar'
 import Sidebar from './Side'
+import '../assets/css/table.css'
 import DashboardStyling from '../assets/css/dashboard.module.css'
 import { useEffect, useState } from 'react';
 import { Outlet, useLocation } from 'react-router-dom';
