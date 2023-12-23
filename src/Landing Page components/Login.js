@@ -32,7 +32,7 @@ const Login = () =>
     {
         e.preventDefault()
 
-        toast.success("Sign In successful!",
+        toast.success("Sign In successful",
         {
         position: toast.POSITION.TOP_RIGHT,
         })

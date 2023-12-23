@@ -2,6 +2,14 @@ import { useState } from "react";
 
 const NewEmployee = () => 
 {
+    const d=new Date()
+    const currentYear=d.getFullYear()
+    const month=d.getMonth() + 1
+    const date=d.getDate()
+
+    let minDateRange=`${currentYear}-${month}-${date}`
+    const maxDateRange=currentYear + "-12-31"
+
     const [employeeFormData, setEmployeeFormData]=useState(
         {
             firstName: "",
@@ -69,8 +77,8 @@ const NewEmployee = () =>
                     <input type="text" id="position" className="form-control fs-6" placeholder="Position" value={employeeFormData.position} onChange={handleInputChange} required/>
                 </div>
                 <div className="col-md-6">
-                    <label htmlFor="startDate" className="form-label fs-5">Start Date</label>
-                    <input type="date" id="startDate" className="form-control fs-6" value={employeeFormData.startDate} onChange={handleInputChange}/>
+                    <label htmlFor="startDate" className="form-label fs-5">Employment Date</label>
+                    <input type="date" id="startDate" className="form-control fs-6" value={employeeFormData.startDate} onChange={handleInputChange} min={minDateRange} max={maxDateRange}/>
                 </div>
                 <div className="col-md-6">
                     <label htmlFor="role" className="form-label fs-5">Role</label>
