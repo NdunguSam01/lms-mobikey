@@ -8,8 +8,10 @@ const Statistics = () =>
         <>
             <h1 className="text-uppercase text-center">Welcome back, Samuel Muigai</h1>
             <StatisticsTiles/>
-            <LeaveBreakdown/>
-            <UpcomingLeave/>
+            <div className="parent-flex">
+                <LeaveBreakdown/>
+                <UpcomingLeave/>
+            </div>
         </>
      );
 }
