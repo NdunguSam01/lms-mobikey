@@ -13,7 +13,7 @@ const LeaveForm = () =>
     const [leaveFormData, setLeaveFormData]=useState(
         {
             leaveType: "",
-            leaveStartDate: "",
+            startDate: "",
             endDate: "",
             numDays: "",
             fileAttachment: "",
@@ -50,7 +50,7 @@ const LeaveForm = () =>
     
     return ( 
         <>
-            <form action="" className="row g-3 mx-5">
+            <form action="" className="row g-4 mx-3">
                 <h1 className="text-center text-uppercase">Leave Request Form</h1>
                 <div className="col-md-12">
                     <label htmlFor="availableDays" className="form-label fs-5">Available Leave Days</label>
@@ -67,12 +67,12 @@ const LeaveForm = () =>
                     </select>
                 </div>
                 <div className="col-md-4">
-                    <label htmlFor="leaveStartDate" className="form-label fs-5">Start Date</label>
-                    <input type="date" id="leaveStartDate" min={minDateRange} max={maxDateRange} className="form-control" value={leaveFormData.startDate} onChange={handleInputChange} required/>
+                    <label htmlFor="startDate" className="form-label fs-5">Start Date</label>
+                    <input type="date" id="startDate" min={minDateRange} max={maxDateRange} className="form-control" value={leaveFormData.startDate} onChange={handleInputChange} required/>
                 </div>
                 <div className="col-md-4">
                     <label htmlFor="endDate" className="form-label fs-5">End Date</label>
-                    <input type="date" id="endDate" min={leaveFormData.leaveStartDate} max={maxDateRange} className="form-control" value={leaveFormData.endDate} onChange={handleInputChange} required/>
+                    <input type="date" id="endDate" min={minDateRange} max={maxDateRange} className="form-control" value={leaveFormData.endDate} onChange={handleInputChange} required/>
                 </div>
                 <div className="col-md-4">
                     <label htmlFor="numDays" className="form-label fs-5">Number of days</label>
