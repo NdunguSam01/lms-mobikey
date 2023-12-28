@@ -107,7 +107,7 @@ const Sidebar = ({sidebarOpen}) =>
                                     <NavLink to="/dashboard/view-employees" className={SideStyles.navLink}>
                                         <div className={SideStyles.sideOption}>
                                             <i className={`fa fa-users ${SideStyles.sideIcons}`}></i>
-                                            <h3 className={SideStyles.h3}>View Employees</h3>
+                                            <h3 className={SideStyles.h3}>All Employees</h3>
                                         </div>
                                     </NavLink>
                                 </li>
