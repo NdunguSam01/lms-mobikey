@@ -3,19 +3,19 @@ import Logo from '../assets/images/Logo.png'
 import { FaHome, FaCalendarAlt, FaCalendarPlus, FaRegCalendarAlt, FaUserPlus, FaUser , FaUsers,FaTable     } from "react-icons/fa";
 import { MdOutlinePendingActions } from "react-icons/md";
 import '../assets/css/sidebar.css'
+import { Link } from "react-router-dom";
 
 const Side = ({sidebarOpen}) => 
 {
     const links={
-        dashboard: '/dashboard/statistics',
-        leaveForm: '/dashboard/leave-form',
-        leaveHistory: '/dashboard/leave-history',
-        pendingRequests: '/dashboard/pending',
-        allRequests: '/dashboard/all',
-        newEmployee: '/dashboard/new-employee',
-        viewEmployees: '/dashboard/view-employees'
+        dashboard: <Link to='/dashboard/statistics'/>,
+        leaveForm: <Link to='/dashboard/leave-form'/>,
+        leaveHistory: <Link to='/dashboard/leave-history'/>,
+        pendingRequests: <Link to='/dashboard/pending'/>,
+        allRequests: <Link to='/dashboard/all'/>,
+        newEmployee: <Link to='/dashboard/new-employee'/>,
+        viewEmployees: <Link to='/dashboard/view-employees'/>
     }
-    console.log(links)
     return ( 
         <>
             <Sidebar className={`sidebar_custom ${sidebarOpen ? "sidebar-open": ''}`}>
@@ -26,16 +26,16 @@ const Side = ({sidebarOpen}) =>
                     <MenuBar>
                         <MenuItem to='/dashboard/statistics' text='Dashboard' leftIcon={<FaHome/>}/>
                         <SubMenuBar label="Leave" labelLeftIcon={<FaCalendarAlt/>}>
-                            <MenuItem to='/dashboard/leave-form' text='Apply Leave' leftIcon={<FaCalendarPlus/>}/>
-                            <MenuItem to='/dashboard/leave-history' text='Leave History' leftIcon={<FaRegCalendarAlt/>}/>
+                            <MenuItem to={links.leaveForm.props.to} text='Apply Leave' leftIcon={<FaCalendarPlus/>}/>
+                            <MenuItem to={links.leaveHistory.props.to} text='Leave History' leftIcon={<FaRegCalendarAlt/>}/>
                         </SubMenuBar>
                         <SubMenuBar label="Employee Requests" labelLeftIcon={<MdOutlinePendingActions/>}>
-                            <MenuItem to='/dashboard/pending' text='Pending Requests' leftIcon={<MdOutlinePendingActions/>}/>
-                            <MenuItem to='/dashboard/all' text='All Requests' leftIcon={<FaTable />}/>
+                            <MenuItem to={links.pendingRequests.props.to} text='Pending Requests' leftIcon={<MdOutlinePendingActions/>}/>
+                            <MenuItem to={links.allRequests.props.to} text='All Requests' leftIcon={<FaTable />}/>
                         </SubMenuBar>
                         <SubMenuBar label="Employees" labelLeftIcon={<FaUser/>}>
-                            <MenuItem to='/dashboard/new-employee' text='New Employee' leftIcon={<FaUserPlus/>}/>
-                            <MenuItem to='/dashboard/view-employees' text='All Employees' leftIcon={<FaUsers/>}/>
+                            <MenuItem to={links.newEmployee.props.to} text='New Employee' leftIcon={<FaUserPlus/>}/>
+                            <MenuItem to={links.viewEmployees.props.to} text='All Employees' leftIcon={<FaUsers/>}/>
                         </SubMenuBar>
                     </MenuBar>
                 </SidebarBody>
