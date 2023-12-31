@@ -43,3 +43,14 @@
     background-color: #ddd;
     color: black;
 }
+@media screen and (min-width:320px) and (max-width:425px) 
+{
+    .sidebar
+    {
+        width: 250px;
+    }
+    .sidebar .sidebar_body .menu_bar .menu_item
+    {
+        gap: 5px;
+    }
+}
