@@ -21,14 +21,14 @@ const LeaveForm = () =>
     const [leaveFormData, setLeaveFormData]=useState(
         {
             leaveType: "",
-            days: "",
+            days: "full",
             startDate: "",
             endDate: "",
             numDays: "",
             fileAttachment: "",
             reason: ""
         })
-
+    
     const handleInputChange= e =>
     {
         const key=e.target.id
