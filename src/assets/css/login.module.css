@@ -11,12 +11,12 @@
 }
 .h1
 {
-    font-weight: 500;
+    font-weight: bolder;
 }
 .image
 {
-    width: 70%;
-    margin: 10px auto;
+    width: 90%;
+    margin: 5px auto;
 }
 .childFlex button, .childFlex a
 {
