@@ -9,10 +9,10 @@ const SidebarItem = ({SideLink}) =>
     {
         return(
             <li>
-                <div className="link-option">
+                <div className="link-option" onClick={() => setDropdownOpen(!dropdownOpen)}>
                     {SideLink.icon && <i className={SideLink.icon}></i>}
                     <h3>{SideLink.title}</h3>
-                    <i className={`${dropdownOpen? "fa fa-angle-up" : "fa fa-angle-down"} toggle-btn`} onClick={() => setDropdownOpen(!dropdownOpen)}></i>
+                    <i className={`${dropdownOpen? "fa fa-angle-up" : "fa fa-angle-down"} toggle-btn`}></i>
                 </div>
                 <ul className={dropdownOpen ? "dropdown-content-open sidebar-list" : "dropdown-content"}>
                     {SideLink.children.map((child, index) => <SidebarItem key={index} SideLink={child} />) }
