@@ -1,6 +1,7 @@
 .mainContainer
 {
-    margin: 70px auto 0px;
+    border: 1px solid transparent;
+    margin: calc(60px + 10px) auto 0px;
     width: 90%;
     height: 80vh;
 }

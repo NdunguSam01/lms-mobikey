@@ -1,56 +1,103 @@
 .sidebar
 {
     position: fixed;
+    width: 300px;
     left: -300px;
     height: 100vh;
-    transition: 0.5s;    
-    padding: 5px;
-    margin-top: 60px;
-    z-index: 1000;
     background-color: black;
-}
-.sidebar .sidebar_header .sidebar_header_logo 
-{
-    background-color: white;
-    width: 100%;
-}
-.sidebar .sidebar_body
-{
-    border: 0px;
-}
-.sidebar .sidebar_body .menu_bar .menu_item
-{
     color: white;
-    gap: 10px;
-    margin-bottom: 15px;
-    font-size: 1.4em;
-}
-.sidebar .sidebar_body .menu_bar .menu_item:hover
-{
-    background-color: #ddd;
-    color: black;
-}
-.sidebar .sidebar_body .menu_bar ul
-{
-    margin-left: 20px;
+    z-index: 1;
+    margin-top: -10px;
+    transition: 0.5s;
+    overflow-x: scroll;
 }
 .sidebar-open
 {
     left: 0;
 }
-.sidebar .sidebar_body .menu_bar .menu_item.active
+.sidebar img
+{
+    width: 100%;
+    background-color: white;
+}
+.sidebar .sidebar-list
+{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.sidebar .sidebar-list a
+{
+    color: inherit;
+    text-decoration: none;
+}
+.sidebar .sidebar-list .link-option
+{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 5px;
+    padding: 8px;
+}
+.sidebar .sidebar-list .link-option:hover
 {
     background-color: #ddd;
     color: black;
 }
-@media screen and (min-width:320px) and (max-width:425px) 
+.sidebar .sidebar-list .link-option .toggle-btn
+{
+    margin-left: auto;
+}
+ul.dropdown-content
+{
+    display: none;
+}
+ul.dropdown-content-open
+{
+    display: block;
+    margin-left: 20px !important;
+    transition-timing-function: ease-in;
+}
+.sidebar .sidebar-list .fa, .sidebar .sidebar-list .fa-solid , .sidebar .sidebar-list .fas 
+{
+    font-size: 20px;
+    width: 10%;
+    text-align: center;
+}
+.sidebar .sidebar-list h3
+{
+    font-size: 1.2em;
+}
+@media screen and (min-width:320px) and (max-width:767px) 
 {
     .sidebar
     {
         width: 250px;
     }
-    .sidebar .sidebar_body .menu_bar .menu_item
+    .sidebar .sidebar-list .link-option
     {
         gap: 5px;
+    }
+    .sidebar .sidebar-list h3
+    {
+        font-size: 1.2em;
+    }
+}
+@media screen and (min-width:768px) and (max-width:1024px)
+{
+    .sidebar
+    {
+        width: 270px;
+    }
+    .sidebar .sidebar-list h3
+    {
+        font-size: 1.25em;
+    }
+} 
+@media screen and (min-width:1024px)
+{
+    .sidebar .sidebar-list h3
+    {
+        font-size: 1.5em;
     }
 }

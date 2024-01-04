@@ -1,5 +1,5 @@
 import Navbar from './Navbar'
-import Sidebar from './Side'
+import Sidebar from './Sidebar'
 import '../assets/css/table.css'
 import DashboardStyling from '../assets/css/dashboard.module.css'
 import { useEffect, useState } from 'react';
@@ -26,7 +26,7 @@ const Layout = () =>
     return ( 
         <>
             <Navbar sidebarStatusFunction={sidebarStatusFunction} sidebarOpen={sidebarOpen}/>
-            <Sidebar sidebarOpen={sidebarOpen} sidebarStatusFunction={sidebarStatusFunction}/>
+            <Sidebar sidebarOpen={sidebarOpen}/>
             <main className={DashboardStyling.mainContainer} onClick={mainContainerClick}>
                 <Outlet/>
             </main>

@@ -1,0 +1,57 @@
+[
+    {
+        "title": "Dashboard",
+        "icon": "fa fa-home",
+        "path":"/dashboard/statistics"
+    },
+    {
+        "title": "Leave",
+        "icon": "fa fa-calendar",
+        "children":
+        [
+            {
+                "title":"Apply Leave",
+                "icon" :"fa fa-calendar-plus-o",
+                "path": "/dashboard/leave-form"
+            },
+            {
+                "title":"Leave History",
+                "icon" :"fa fa-list-alt",
+                "path": "/dashboard/leave-history"
+            }
+        ]
+    },
+    {
+        "title": "Employee Requests",
+        "icon":"fas fa-clipboard-list",
+        "children":
+        [
+            {
+                "title":"Pending Requests",
+                "icon": "fa-solid fa-clipboard-list",
+                "path":"/dashboard/pending"
+            },
+            {
+                "title":"All Requests",
+                "icon":"fa fa-list-alt"
+            }
+        ]
+    },
+    {
+        "title":"Employees",
+        "icon":"fa fa-user",
+        "children":
+        [
+            {
+                "title":"New Employee",
+                "icon":"fa fa-user-plus",
+                "path":"/dashboard/new-employee"   
+            },
+            {
+                "title":"All Employees",
+                "icon":"fa fa-users",
+                "path":"/dashboard/view-employees"   
+            }
+        ]
+    }
+]
