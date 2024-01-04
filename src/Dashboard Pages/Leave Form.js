@@ -71,10 +71,10 @@ const LeaveForm = () =>
                     </select>
                 </div>
                 <div className="col-md-6">
-                    <label htmlFor="days" className="form-label fs-5">Half Day/Full Day</label>
+                    <label htmlFor="days" className="form-label fs-5">Abscence Type</label>
                     <select id="days" className="form-select" value={leaveFormData.days} onChange={handleInputChange} required>
-                        <option value="half">Half Day</option>
                         <option value="full">Full Day</option>
+                        <option value="half">Half Day</option>
                     </select>
                 </div>
                 <div className="col-md-4">
