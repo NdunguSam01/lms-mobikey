@@ -43,6 +43,7 @@
 {
     background-color: #ddd;
     color: black;
+    cursor: pointer;
 }
 .sidebar .sidebar-list .link-option .toggle-btn
 {

@@ -7,7 +7,8 @@
 {
     height: max-content;
     width: 400px;
-    margin-top: 80px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
 }
 .h1
 {
@@ -24,6 +25,10 @@
 }
 @media screen and (min-width: 320px) and (max-width: 374px) 
 {
+    .form
+    {
+        margin-top: 20vh;
+    }
     .childFlex button, .childFlex a
     {
         width: 40%;
@@ -31,6 +36,10 @@
 }
 @media screen and (min-width: 375px) and (max-width: 425px) 
 {
+    .form
+    {
+        margin-top: 20vh;
+    }
     .childFlex button, .childFlex a
     {
         width: 42%;
@@ -38,8 +47,33 @@
 }
 @media screen and (min-width: 426px) and (max-width: 767px) 
 {
+    .form
+    {
+        margin-top: 20vh;
+    }
     .childFlex button, .childFlex a
     {
         width: 43%;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px)
+{
+    .form
+    {
+        margin-top: 15vh;
+    }
+} 
+@media screen and (min-width: 1025px) and (max-width: 1440px)
+{
+    .form
+    {
+        margin-top: 13vh;
+    }
+}
+@media screen and (min-width: 1441px) 
+{
+    .form
+    {
+        margin-top: 20vh;
     }
 }
