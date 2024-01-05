@@ -8,9 +8,11 @@ const LandingPage = () =>
             <nav className={LinkStyles.navbar}>
                 <Link to="/login" className={LinkStyles.navLink}>Login</Link>
             </nav>
-            <div className={LinkStyles.message}>
-                <h2>Mobikey Truck and Bus Limited</h2>
-                <p>Official dealer of MAN trucks and busses</p>
+            <div className={LinkStyles.flex}>
+                <div className={LinkStyles.message}>
+                    <h2>Mobikey Truck and Bus Limited</h2>
+                    <p>Official dealer of MAN trucks and busses</p>
+                </div>
             </div>
         </div>
     );

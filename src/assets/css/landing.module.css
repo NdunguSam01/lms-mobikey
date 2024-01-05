@@ -23,8 +23,16 @@
     cursor: pointer;
     color: blue;
 }
+.flex
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 85vh;
+}
 .message
 {
+    width: 100%;
     text-align: center;
     text-transform: uppercase;
     background: rgba(0, 0, 0, 0.25);
@@ -39,7 +47,6 @@
     .message
     {
         padding: 20px;
-        margin-top: 220px;
     }
     .message h2
     {
@@ -55,7 +62,6 @@
     .message
     {
         padding: 20px;
-        margin-top: 220px;
         line-height: 1.2;
     }
     .message h2
@@ -72,7 +78,6 @@
     .message
     {
         padding: 40px;
-        margin-top: 280px;
         line-height: 2;
     }
     .message h2
@@ -93,7 +98,6 @@
     .message
     {
         padding: 30px;
-        margin-top: 300px;
     }
     .message h2
     {
@@ -112,7 +116,6 @@
     }
     .message
     {
-        margin-top: 180px;
         padding: 40px;
         line-height: 2.5;
     }
@@ -133,7 +136,6 @@
     }
     .message
     {
-        margin-top: 240px;
         padding: 45px;
         line-height: 3;
     }
