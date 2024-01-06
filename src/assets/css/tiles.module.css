@@ -3,7 +3,7 @@
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    padding: 20px;
+    padding: 20px 0px;
 }
 .tile
 {
@@ -13,7 +13,7 @@
     text-align: center;
     border-radius: 10px;
 }
- .text
+.text
 {
     width: 85%;
     text-align: center;
