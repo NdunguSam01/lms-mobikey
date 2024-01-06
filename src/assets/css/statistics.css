@@ -7,13 +7,19 @@
 }
 .history
 {
-    width: 40%;
     height: auto;
+    width: 40%;
 }
 .upcoming
 {
-    width: 60%;
+    align-items: flex-end;
+    margin-left: auto;
+    width: 50%;
     height: auto;
+}
+.history h1, .upcoming h1
+{
+    text-align: center;
 }
 .history, .upcoming
 {
