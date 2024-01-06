@@ -8,7 +8,6 @@
 .history
 {
     height: auto;
-    width: 40%;
 }
 .upcoming
 {
@@ -19,12 +18,12 @@
 }
 .history h1, .upcoming h1
 {
-    margin-left: 10px;
-    text-decoration: underline;
+    margin-left: 15px;
+    font-weight: 500;
 }
 .history, .upcoming
 {
-    border-left: 1px solid lightgrey;
+    border-left: 2px solid lightgrey;
 }
 
 @media screen and (min-width:320px) and (max-width: 1024px) 
@@ -37,5 +36,9 @@
     .history, .upcoming
     {
         width: 100%;
+    }
+    .history h1, .upcoming h1
+    {
+        margin-left: 10px;
     }
 }
