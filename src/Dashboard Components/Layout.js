@@ -9,10 +9,8 @@ const Layout = () =>
 {
     const [sidebarOpen, setSidebarOpen]=useState(false)
 
-    const sidebarStatusFunction= () =>
-    {
-        setSidebarOpen(!sidebarOpen)
-    }
+    const sidebarStatusFunction= () =>setSidebarOpen(!sidebarOpen)
+
     const mainContainerClick= () => sidebarOpen && setSidebarOpen(false)
 
     const location=useLocation()
@@ -20,7 +18,7 @@ const Layout = () =>
     useEffect(()=>
     {
         if(sidebarOpen === true) setSidebarOpen(false)
-        
+
     // eslint-disable-next-line react-hooks/exhaustive-deps
     },[location])
     return ( 

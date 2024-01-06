@@ -33,7 +33,8 @@
             },
             {
                 "title":"All Requests",
-                "icon":"fa fa-list-alt"
+                "icon":"fa fa-list-alt",
+                "path":"/dashboard/all"
             }
         ]
     },
