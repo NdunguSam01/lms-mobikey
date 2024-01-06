@@ -16,6 +16,10 @@
     width: 50%;
     height: auto;
 }
+.upcoming .table
+{
+    margin-left: 15px;
+}
 .history h1, .upcoming h1
 {
     margin-left: 15px;
