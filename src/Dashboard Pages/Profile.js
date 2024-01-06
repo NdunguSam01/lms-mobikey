@@ -2,10 +2,10 @@ const Profile = () =>
 {
     return ( 
         <>
-            <section className="row g-2">
+            <section className="row g-">
                 <h2 className="text-uppercase">General information</h2>
                 <div className="col-md-6">
-                    <label htmlFor="firstName" className="form-label fs-6">First Name</label>
+                    <label htmlFor="firstNa1me" className="form-label fs-6">First Name</label>
                     <input type="text" name="firstName" className="form-control fs-6" readOnly/>
                 </div>
                 <div className="col-md-6">
