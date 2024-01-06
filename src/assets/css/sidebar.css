@@ -68,6 +68,7 @@ ul.dropdown-content-open
 .sidebar .sidebar-list h3
 {
     font-size: 1.2em;
+    padding-top: 10px;
 }
 @media screen and (min-width:320px) and (max-width:767px) 
 {
