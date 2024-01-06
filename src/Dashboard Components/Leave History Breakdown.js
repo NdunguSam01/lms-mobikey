@@ -17,7 +17,9 @@ const LeaveBreakdown = () =>
     return ( 
         <div className="history">
             <h1>Leave History Breakdown</h1>
-            <PieChart series={[{data: chartData,outerRadius: 100}]} width={400} height={200}/>
+            <div className='pie-chart'>
+                <PieChart series={[{data: chartData,outerRadius: 100}]} width={400} height={200}/>
+            </div>
         </div>
      );
 }
