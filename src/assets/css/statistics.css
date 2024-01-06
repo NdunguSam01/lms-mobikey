@@ -19,12 +19,12 @@
 }
 .history h1, .upcoming h1
 {
-    text-align: center;
+    margin-left: 10px;
+    text-decoration: underline;
 }
 .history, .upcoming
 {
-    border: 1px solid lightgrey;
-    border-radius: 10px;
+    border-left: 1px solid lightgrey;
 }
 
 @media screen and (min-width:320px) and (max-width: 1024px) 
