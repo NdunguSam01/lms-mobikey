@@ -21,7 +21,7 @@ const LeaveForm = () =>
     const [leaveFormData, setLeaveFormData]=useState(
         {
             leaveType: "",
-            days: "full",
+            days: "",
             startDate: "",
             endDate: "",
             numDays: "",
@@ -63,7 +63,7 @@ const LeaveForm = () =>
                 <div className="col-md-6">
                     <label htmlFor="leaveType" className="form-label fs-5">Leave Type</label>
                     <select id="leaveType" className="form-select" value={leaveFormData.leaveType} onChange={handleInputChange} required>
-                        <option value="">Select Leave Type</option>
+                        <option value="" selected>Select Leave Type</option>
                         <option value="normal">Normal Leave</option>
                         <option value="sick">Sick Leave</option>
                         <option value="paternity">Paternity Leave</option>
@@ -73,6 +73,7 @@ const LeaveForm = () =>
                 <div className="col-md-6">
                     <label htmlFor="days" className="form-label fs-5">Leave Duration</label>
                     <select id="days" className="form-select" value={leaveFormData.days} onChange={handleInputChange} required>
+                        <option value="" selected>Select Leave Duration</option>
                         <option value="full">Full Day</option>
                         <option value="half">Half Day</option>
                     </select>
