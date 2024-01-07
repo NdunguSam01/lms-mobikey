@@ -40,7 +40,7 @@ const LeaveForm = () =>
                 numDays: leaveDays
             }
         )
-    },[leaveFormData.endDate])
+    },[leaveFormData.endDate, leaveFormData.startDate])
 
     
     let fileRequired=""
