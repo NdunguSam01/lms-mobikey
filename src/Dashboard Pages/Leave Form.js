@@ -1,33 +1,23 @@
-import { useState } from "react"
+/* eslint-disable react-hooks/exhaustive-deps */
+import { useEffect, useState } from "react"
+import MinAndMax from "../Calculations/Min and Max Dates"
+import LeaveDays from "../Calculations/Leave Days"
 
 const LeaveForm = () => 
 {
-    const d=new Date()
-    let currentYear=d.getFullYear()
-    let month=d.getMonth() + 1
-    let date=d.getDate()
-    let minDateRange=""
-    const maxDateRange=currentYear + "-12-31"
-
-    if(month <= 9)
-    {
-        minDateRange=`${currentYear}-0${month}-0${date}`
-    }
-    else
-    {
-        minDateRange=`${currentYear}-${month}-${date}`
-    }
-
+    const {minDateRange, maxDateRange}=MinAndMax()
+    
     const [leaveFormData, setLeaveFormData]=useState(
         {
             leaveType: "",
             days: "",
             startDate: "",
             endDate: "",
-            numDays: "",
+            numDays: 0,
             fileAttachment: "",
             reason: ""
         })
+
     
     const handleInputChange= e =>
     {
@@ -41,6 +31,18 @@ const LeaveForm = () =>
             })
     }
 
+    useEffect(()=>
+    {
+        const leaveDays=LeaveDays(leaveFormData.startDate, leaveFormData.endDate)
+        setLeaveFormData(
+            {
+                ...leaveFormData,
+                numDays: leaveDays
+            }
+        )
+    },[leaveFormData.endDate])
+
+    
     let fileRequired=""
 
     if (leaveFormData.leaveType === "sick" || leaveFormData.leaveType === "paternity")
@@ -58,12 +60,12 @@ const LeaveForm = () =>
                 <h1 className="text-center text-uppercase">Leave Request Form</h1>
                 <div className="col-md-12">
                     <label htmlFor="availableDays" className="form-label fs-5">Available Leave Days</label>
-                    <input type="text" id="availableDays" className="form-control" placeholder="Available Leave Days" readOnly/>
+                    <input type="number" id="availableDays" className="form-control" placeholder="Available Leave Days" value={21} readOnly/>
                 </div>
                 <div className="col-md-6">
                     <label htmlFor="leaveType" className="form-label fs-5">Leave Type</label>
                     <select id="leaveType" className="form-select" value={leaveFormData.leaveType} onChange={handleInputChange} required>
-                        <option value="" selected>Select Leave Type</option>
+                        <option value="">Select Leave Type</option>
                         <option value="normal">Normal Leave</option>
                         <option value="sick">Sick Leave</option>
                         <option value="paternity">Paternity Leave</option>
@@ -73,7 +75,7 @@ const LeaveForm = () =>
                 <div className="col-md-6">
                     <label htmlFor="days" className="form-label fs-5">Leave Duration</label>
                     <select id="days" className="form-select" value={leaveFormData.days} onChange={handleInputChange} required>
-                        <option value="" selected>Select Leave Duration</option>
+                        <option value="">Select Leave Duration</option>
                         <option value="full">Full Day</option>
                         <option value="half">Half Day</option>
                     </select>
