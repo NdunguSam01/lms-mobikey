@@ -3,18 +3,20 @@ import ReactDOM from 'react-dom/client';
 import './assets/css/index.css';
 import reportWebVitals from './reportWebVitals';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import requests from './Data/Leave Requests.json'
 import LandingPage from './Landing Page/Landing Page';
 import Login from './Landing Page/Login';
 import ForgotPassword from './Landing Page/Forgot';
 import Layout from './Dashboard Components/Layout';
 import PageNotFound from './PageNotFound'
 import LeaveForm from './Dashboard Pages/Leave Form'
-import LeaveHistory from './Dashboard Pages/Leave History'
+import LeaveRequests from './Dashboard Pages/Leave History/Leave Requests'
 import Pending from './Dashboard Pages/Pending Requests'
 import NewEmployee from './Dashboard Pages/New Employee'
 import ViewEmployees from './Dashboard Pages/View Employees'
 import Profile from './Dashboard Pages/Profile'
 import Statistics from './Dashboard Pages/Statistics';
+import Request from './Dashboard Pages/Leave History/Request';
 
 const router=createBrowserRouter(
   [
@@ -45,7 +47,7 @@ const router=createBrowserRouter(
         },
         { 
           path: "leave-history", 
-          element: <LeaveHistory />
+          element: <LeaveRequests requests={requests}/>
         },
         {
           path: "pending",
@@ -62,6 +64,10 @@ const router=createBrowserRouter(
         {
           path: "profile",
           element: <Profile/>
+        },
+        {
+          path: "request/:id",
+          element: <Request requests={requests}/>
         }
       ],
     },

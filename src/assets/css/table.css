@@ -1,3 +1,10 @@
+.table th
+{
+	text-transform: uppercase;
+	font-weight: 800;
+	background-color: green;
+	color: white;
+}
 @media(max-width:1023px)
 {
     .table thead

@@ -2,7 +2,7 @@ const Profile = () =>
 {
     return ( 
         <>
-            <section className="row g-">
+            <section className="row">
                 <h2 className="text-uppercase">General information</h2>
                 <div className="col-md-6">
                     <label htmlFor="firstNa1me" className="form-label fs-6">First Name</label>

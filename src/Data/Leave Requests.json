@@ -1,0 +1,28 @@
+[
+    {
+        "id": 1,
+        "leaveType": "Normal",
+        "leaveDuration": "Full",
+        "startDate": "2024-01-03",
+        "endDate": "2024-01-08",
+        "numDays": 5,
+        "fileAttachment": "",
+        "reason": "Resting in order to clear my mind",
+        "directControl": "Pending",
+        "generalManager": "Pending",
+        "humanResources": "Pending"
+    },
+    {
+        "id": 2,
+        "leaveType": "Normal",
+        "leaveDuration": "Half",
+        "startDate": "2024-01-10",
+        "endDate": "2024-01-16",
+        "numDays": 6,
+        "fileAttachment": "",
+        "reason": "Recharging my mental batteries",
+        "directControl": "Pending",
+        "generalManager": "Pending",
+        "humanResources": "Pending"
+    }
+]
