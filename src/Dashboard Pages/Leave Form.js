@@ -42,6 +42,16 @@ const LeaveForm = () =>
         )
     },[leaveFormData.endDate, leaveFormData.startDate])
 
+    useEffect(()=>
+    {
+        setLeaveFormData(
+            {
+                ...leaveFormData,
+                endDate: ""
+            }
+        )
+    },[leaveFormData.startDate])
+
     
     let fileRequired=""
 
