@@ -8,7 +8,7 @@ const Statistics = () =>
 {
     return ( 
         <>
-            <h1 className="text-uppercase text-center mt-2">Welcome back, Samuel Muigai</h1>
+            <h1 className="text-uppercase text-center mt-2">Welcome back, John Doe</h1>
             <StatisticsTiles/>
             <div className="parent-flex">
                 <LeaveBreakdown/>

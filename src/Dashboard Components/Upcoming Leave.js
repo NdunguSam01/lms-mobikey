@@ -21,8 +21,6 @@ const UpcomingLeave = () =>
                         <td data-label="End Date">2023-12-15</td>
                         <td data-label="Number of days">6</td>
                     </tr>
-                </tbody>
-                <tbody>
                     <tr>
                         <td data-label="Employee Name">John Doe</td>
                         <td data-label="Start Date">2023-12-09</td>

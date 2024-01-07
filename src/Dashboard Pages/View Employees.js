@@ -17,17 +17,17 @@ const ViewEmployees = () =>
                 </thead>
                 <tbody>
                     <tr>
-                        <td data-label="First Name">Samuel</td>
-                        <td data-label="Last Name">Muigai</td>
+                        <td data-label="First Name">John</td>
+                        <td data-label="Last Name">Doe</td>
                         <td data-label="Email">test@test.com</td>
-                        <td data-label="Department">Logistics</td>
-                        <td data-label="Position">Logistics Assistant</td>
+                        <td data-label="Department">Finance</td>
+                        <td data-label="Position">Accountant</td>
                         <td data-label="Start Date">2023-12-09</td>
                         <td><button className="btn btn-danger">Disable account</button></td>
                     </tr>
                     <tr>
-                        <td data-label="First Name">Kennedy</td>
-                        <td data-label="Last Name">Karanja</td>
+                        <td data-label="First Name">Jane</td>
+                        <td data-label="Last Name">Doe</td>
                         <td data-label="Email">test@test.com</td>
                         <td data-label="Department">Fiance</td>
                         <td data-label="Position">Finance Director</td>
