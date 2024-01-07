@@ -2,8 +2,8 @@ const ViewEmployees = () =>
 {
     return ( 
         <>
-            <h1 className="text-uppercase text-center mt-4">All employees</h1>
-            <table className="table table-striped table-bordered">
+            <h1 className="text-uppercase text-center">All employees</h1>
+            <table className="table table-striped table-bordered mt-3">
                 <thead>
                     <tr>
                         <th scope="col">First Name</th>

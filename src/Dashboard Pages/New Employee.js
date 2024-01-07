@@ -36,7 +36,7 @@ const NewEmployee = () =>
 
     return ( 
         <>
-            <form action="" className="row g-3 mx-2 mt-1">
+            <form action="" className="row g-3 mx-2">
                 <h1 className="text-center text-uppercase">New Employee</h1>
                 <div className="col-md-6">
                     <label htmlFor="firstName" className="form-label fs-5">First Name</label>
