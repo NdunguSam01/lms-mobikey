@@ -5,8 +5,10 @@ import LeaveDays from "../Calculations/Leave Days"
 
 const LeaveForm = () => 
 {
+    //Declaring the min and max date ranges to be used in the date pickers
     const {minDateRange, maxDateRange}=MinAndMax()
     
+    //Form data state
     const [leaveFormData, setLeaveFormData]=useState(
         {
             leaveType: "",
@@ -18,7 +20,7 @@ const LeaveForm = () =>
             reason: ""
         })
 
-    
+    //Function to handle change in the input fields by capturing the element's ID and using it to update the respective state with the new value
     const handleInputChange= e =>
     {
         const key=e.target.id
@@ -31,17 +33,7 @@ const LeaveForm = () =>
             })
     }
 
-    useEffect(()=>
-    {
-        const leaveDays=LeaveDays(leaveFormData.startDate, leaveFormData.endDate)
-        setLeaveFormData(
-            {
-                ...leaveFormData,
-                numDays: leaveDays
-            }
-        )
-    },[leaveFormData.endDate, leaveFormData.startDate])
-
+    //useEffect hook to change the endDate state back to an empty string once the startDate state changes
     useEffect(()=>
     {
         setLeaveFormData(
@@ -52,21 +44,25 @@ const LeaveForm = () =>
         )
     },[leaveFormData.startDate])
 
-    
-    let fileRequired=""
+    //useEffect hook to calculate the number of leave days once the endDate state changes
+    useEffect(()=>
+    {
+        const leaveDays=LeaveDays(leaveFormData.startDate, leaveFormData.endDate)
+        setLeaveFormData(
+            {
+                ...leaveFormData,
+                numDays: leaveDays
+            }
+        )
+    },[leaveFormData.endDate])
 
-    if (leaveFormData.leaveType === "sick" || leaveFormData.leaveType === "paternity")
-    {
-        fileRequired="required"
-    }
-    else
-    {
-        fileRequired=""
-    }
+    //Setting the file upload input field to required once the leave type is sick or paternity
+    const fileRequired=leaveFormData.leaveType==="sick" || leaveFormData.type==="paternity" ? "required" : ""
     
     return ( 
         <>
             <form action="" className="row g-4 mx-3">
+                
                 <h1 className="text-center text-uppercase">Leave Request Form</h1>
                 <div className="col-md-12">
                     <label htmlFor="availableDays" className="form-label fs-5">Available Leave Days</label>
