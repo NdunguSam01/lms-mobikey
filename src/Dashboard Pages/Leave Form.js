@@ -44,7 +44,7 @@ const LeaveForm = () =>
         )
     },[leaveFormData.startDate])
 
-    //useEffect hook to calculate the number of leave days once the endDate, leaveType and leaveDuration states change
+    //useEffect hook to calculate the number of leave days once the endDate state change
     useEffect(()=>
     {
         const leaveDays=LeaveDays(leaveFormData.startDate, leaveFormData.endDate, leaveFormData.leaveType, leaveFormData.leaveDuration)
@@ -54,7 +54,7 @@ const LeaveForm = () =>
                 numDays: leaveDays
             }
         )
-    },[leaveFormData.endDate, leaveFormData.leaveType, leaveFormData.leaveDuration])
+    },[leaveFormData.endDate])
 
     //Setting the file upload input field to required once the leave type is sick or paternity
     const fileRequired=leaveFormData.leaveType==="sick" || leaveFormData.type==="paternity" ? "required" : ""
