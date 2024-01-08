@@ -15,7 +15,7 @@ const LeaveForm = () =>
             leaveDuration: "",
             startDate: "",
             endDate: "",
-            numDays: 0,
+            numDays: null,
             fileAttachment: "",
             reason: ""
         })
@@ -108,7 +108,7 @@ const LeaveForm = () =>
                 </div>
                 <div className="col-md-4 mt-3">
                     <label htmlFor="numDays" className="form-label fs-5">Number of days</label>
-                    <input type="number" id="numDays" className="form-control" required value={leaveFormData.numDays} onChange={handleInputChange} readOnly/>
+                    <input type="number" id="numDays" className="form-control" required value={leaveFormData.numDays || 0} onChange={handleInputChange} readOnly/>
                 </div>
                 <div className="col-md-6 mt-3">
                     <label htmlFor="fileAttachment" className="form-label fs-5">Attach file</label>
