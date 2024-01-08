@@ -65,19 +65,19 @@ const LeaveForm = () =>
                 <h2 className="text-uppercase fw-bolder">Available Leave days</h2>
                 <div className="col-md-3 mt-2">
                     <label htmlFor="normalLeaveDays" className="form-label fs-5">Normal Leave</label>
-                    <input type="number" id="normalLeaveDays" className="form-control" value={21} readOnly/>
+                    <input type="number" id="normalLeaveDays" className="form-control" value={21} disabled/>
                 </div>
                 <div className="col-md-3 mt-2">
                     <label htmlFor="sickLeaveDays" className="form-label fs-5">Sick Leave</label>
-                    <input type="number" id="sickLeaveDays" className="form-control" value={10} readOnly/>
+                    <input type="number" id="sickLeaveDays" className="form-control" value={10} disabled/>
                 </div>
                 <div className="col-md-3 mt-2">
                     <label htmlFor="paternityLeaveDays" className="form-label fs-5">Paternity Leave</label>
-                    <input type="number" id="paternityLeaveDays" className="form-control" value={14} readOnly/>
+                    <input type="number" id="paternityLeaveDays" className="form-control" value={14} disabled/>
                 </div>
                 <div className="col-md-3 mt-2">
                     <label htmlFor="maternityLeaveDys" className="form-label fs-5">Maternity Leave</label>
-                    <input type="number" id="maternityLeaveDys" className="form-control" value={90} readOnly/>
+                    <input type="number" id="maternityLeaveDys" className="form-control" value={90} disabled/>
                 </div>
                 <h2 className="text-uppercase fw-bolder mt-4">Leave request details</h2>
                 <div className="col-md-6 mt-3">
