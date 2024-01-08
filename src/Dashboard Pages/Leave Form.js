@@ -7,7 +7,7 @@ const LeaveForm = () =>
 {
     //Declaring the min and max date ranges to be used in the date pickers
     const {minDateRange, maxDateRange}=MinAndMax()
-    
+
     //Form data state
     const [leaveFormData, setLeaveFormData]=useState(
         {
