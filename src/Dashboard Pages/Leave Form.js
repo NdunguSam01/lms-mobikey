@@ -62,7 +62,7 @@ const LeaveForm = () =>
     return ( 
         <>
             <form action="" className="row g-3">
-                <h2 className="text-uppercase text-decoration-underline">Available Leave days</h2>
+                <h2 className="text-uppercase fw-bolder">Available Leave days</h2>
                 <div className="col-md-3 mt-2">
                     <label htmlFor="normalLeaveDays" className="form-label fs-5">Normal Leave</label>
                     <input type="number" id="normalLeaveDays" className="form-control" value={21} readOnly/>
@@ -79,7 +79,7 @@ const LeaveForm = () =>
                     <label htmlFor="maternityLeaveDys" className="form-label fs-5">Maternity Leave</label>
                     <input type="number" id="maternityLeaveDys" className="form-control" value={90} readOnly/>
                 </div>
-                <h2 className="text-uppercase text-decoration-underline mt-4">Leave request details</h2>
+                <h2 className="text-uppercase fw-bolder mt-4">Leave request details</h2>
                 <div className="col-md-6 mt-3">
                     <label htmlFor="leaveType" className="form-label fs-5">Leave Type</label>
                     <select id="leaveType" className="form-select" value={leaveFormData.leaveType} onChange={handleInputChange} required>
