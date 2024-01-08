@@ -11,8 +11,8 @@ const LeaveForm = () =>
     //Form data state
     const [leaveFormData, setLeaveFormData]=useState(
         {
-            leaveType: "",
-            days: "",
+            leaveType: "normal",
+            leaveDuration: "full",
             startDate: "",
             endDate: "",
             numDays: 0,
@@ -44,17 +44,17 @@ const LeaveForm = () =>
         )
     },[leaveFormData.startDate])
 
-    //useEffect hook to calculate the number of leave days once the endDate state changes
+    //useEffect hook to calculate the number of leave days once the endDate, leaveType and leaveDuration states change
     useEffect(()=>
     {
-        const leaveDays=LeaveDays(leaveFormData.startDate, leaveFormData.endDate)
+        const leaveDays=LeaveDays(leaveFormData.startDate, leaveFormData.endDate, leaveFormData.leaveType, leaveFormData.leaveDuration)
         setLeaveFormData(
             {
                 ...leaveFormData,
                 numDays: leaveDays
             }
         )
-    },[leaveFormData.endDate])
+    },[leaveFormData.endDate, leaveFormData.leaveType, leaveFormData.leaveDuration])
 
     //Setting the file upload input field to required once the leave type is sick or paternity
     const fileRequired=leaveFormData.leaveType==="sick" || leaveFormData.type==="paternity" ? "required" : ""
@@ -71,7 +71,6 @@ const LeaveForm = () =>
                 <div className="col-md-6">
                     <label htmlFor="leaveType" className="form-label fs-5">Leave Type</label>
                     <select id="leaveType" className="form-select" value={leaveFormData.leaveType} onChange={handleInputChange} required>
-                        <option value="">Select Leave Type</option>
                         <option value="normal">Normal Leave</option>
                         <option value="sick">Sick Leave</option>
                         <option value="paternity">Paternity Leave</option>
@@ -79,9 +78,8 @@ const LeaveForm = () =>
                     </select>
                 </div>
                 <div className="col-md-6">
-                    <label htmlFor="days" className="form-label fs-5">Leave Duration</label>
-                    <select id="days" className="form-select" value={leaveFormData.days} onChange={handleInputChange} required>
-                        <option value="">Select Leave Duration</option>
+                    <label htmlFor="leaveDuration" className="form-label fs-5">Leave Duration</label>
+                    <select id="leaveDuration" className="form-select" value={leaveFormData.leaveDuration} onChange={handleInputChange} required>
                         <option value="full">Full Day</option>
                         <option value="half">Half Day</option>
                     </select>
